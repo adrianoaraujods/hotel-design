@@ -1,131 +1,29 @@
-Fluxo → Wireframe → UI no Figma → Protótipo navegável → HTML/CSS
+# Grand Stay Hotel
 
-# Etapa 1 — Fluxo do usuário (Exemplo)
+Esse repositório é um projeto que tem como objetivo criar um design completo de um site para um hotel.
 
-### Por exemplo, para uma hamburgueria:
+As páginas são estáticas, sendo a única interação a navegação entre as páginas.
 
-### Fluxo principal - Usuário quer fazer um pedido
+O design está disponível em: [Figma](https://www.figma.com/design/0nezSUfLLH2to6fvdiJ2nR/Hotel?node-id=0-1&t=gXGF7fe6rK9mafxQ-1).
 
-Home
-  ↓
-Cardápio
-  ↓
-Produto
-  ↓
-Adicionar ao carrinho
-  ↓
-Carrinho
-  ↓
-Identificação
-  ↓
-Endereço
-  ↓
-Pagamento
-  ↓
-Pedido confirmado
+## Telas
 
-### fluxo secundário
+- [Home](./index.html);
+- [Quartos](./quartos.html);
+- [Detalhes do quarto](./quartos/normal.html);
+- [Cardápio / Restaurante](./cardapio.html);
+- [Estrutura](./estrutura.html);
+- [Piscina/lazer](./lazer.html);
+- [Experiências](./experiencias.html);
+- [Reserva](./reserva.html);
+- [Confirmação](./reserva.html).
 
-Home
-  ↓
-Cardápio
-  ↓
-Produto
-  ↓
-Avaliações
-  ↓
-Voltar para produto
+## Fluxos
 
----
+- **Fluxo Principal:** Home → Quartos → Detalhes do quarto → Reserva → Confirmação
+- **Fluxo Secundário:** Home → Estrutura → Experiências → Lazer → Quartos Detalhes do quarto → Reserva → Confirmação
+- **Fluxo Alternativo:** Home → Cardápio
 
-#Etapa 2 — Wireframe (Exemplo)
-Wireframe não pode ter preocupação estética.
+## Stack
 
-A ideia é representar:
-
-<img width="245" height="308" alt="image" src="https://github.com/user-attachments/assets/a4c0c9fc-d64f-448c-b26e-679f16b909b6" />
-
-
-E todas as telas precisam estar identificadas:
-
-Home
-Produtos
-Produto
-Carrinho
-Checkout
-etc.
-
-# Etapa 3 — UI Design (Exemplo)
-
-## Design System
-
-### Cores
-Primária
-Secundária
-Background
-Texto
-Texto secundário
-Erro
-Sucesso
-
-### Tipografia
-H1
-H2
-H3
-Body
-Button
-
-### Componentes
-Botão primário
-Botão secundário
-Input
-Card
-Navbar
-Footer
-
-# Etapa 4 — Protótipo navegável
-
-Exemplo:
-
-Home
-
-[Ver produtos]
-
-↓
-
-Produtos
-
-[Hambúrguer X]
-
-↓
-
-Produto
-
-[Adicionar ao carrinho]
-
-↓
-
-Carrinho
-
-[Finalizar pedido]
-
-↓
-
-Checkout
-
-[Confirmar pedido]
-
-↓
-
-Sucesso
-
-# Etapa 5 — Transformar Figma em HTML/CSS
-
-"Agora transforme o seu próprio design em código."
-
-HTML
-CSS
-Flexbox
-Grid
-Media Queries
-HTML semântico
+O site é totalmente feito utilizando apenas HTML + CSS.
