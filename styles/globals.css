@@ -1,0 +1,15 @@
+:root {
+	--background-color: #ffffff;
+	--foreground-color: #000000;
+	--surface-color: #e8eeed;
+	--primary-color: #363636;
+	--primary-foreground-color: #ffffff;
+	--muted-foreground-color: #676767;
+
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 16px;
+	--space-4: 32px;
+	--space-5: 64px;
+	--space-6: 128px;
+}
