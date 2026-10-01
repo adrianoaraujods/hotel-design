@@ -6,6 +6,12 @@
 	--primary-foreground-color: #ffffff;
 	--muted-foreground-color: #676767;
 
+	--text-2xl: 48px;
+	--text-xl: 32px;
+	--text-lg: 24px;
+	--text: 16px;
+	--text-sm: 12px;
+
 	--space-1: 4px;
 	--space-2: 8px;
 	--space-3: 16px;
