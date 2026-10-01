@@ -77,6 +77,44 @@
     <img src="./assets/corner.svg" aria-hidden>
   </header>
 
+  <section class="hero-section">
+    <!-- biome-ignore lint/a11y/useSemanticElements: cannot use section because it is already inside one -->
+    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Destaques do hotel">
+
+      <!-- All slides render stacked (absolute, opacity 0). Autoplay fades each in/out via different animation delays -->
+      <ul class="carousel__slides">
+        <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 3">
+          <img src="./assets/images/antonio-janeski-VIGLnzEpOm4-unsplash.webp"
+            alt="Fachada do hotel de frente a um lago">
+        </li>
+        <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 3">
+          <img src="./assets/images/alan-rodriguez-54HOhDVM71g-unsplash.webp" alt="Área externa do hotel com piscina">
+        </li>
+        <li class="carousel__slide carousel__slide--3" aria-roledescription="slide" aria-label="3 de 3">
+          <img src="./assets/images/pexels-cottonbro-5371569.webp" alt="Café da manhã servido no hotel">
+        </li>
+      </ul>
+
+      <footer class="carousel__footer">
+        <!-- biome-ignore lint/a11y/useAltText: decorative element -->
+        <img src="./assets/corner.svg" style="transform: rotateX(180deg) rotateY(180deg); aspect-ratio: 1; height: 32px;" aria-hidden>
+
+        <!-- The radio inputs controls the slides, holding the state with the `checked` propery. When checked, they stop the autoplay animation, forcing the specific slide to show. -->
+        <div class="carousel__dots">
+          <input class="carousel__dot carousel__dot--1" type="radio" name="hero-slide" id="hero-t1"
+            aria-label="Ir para imagem 1">
+          <input class="carousel__dot carousel__dot--2" type="radio" name="hero-slide" id="hero-t2"
+            aria-label="Ir para imagem 2">
+          <input class="carousel__dot carousel__dot--3" type="radio" name="hero-slide" id="hero-t3"
+            aria-label="Ir para imagem 3">
+        </div>
+
+        <!-- biome-ignore lint/a11y/useAltText: decorative element -->
+        <img src="./assets/corner.svg" style="transform: rotateX(180deg); aspect-ratio: 1; height: 32px;" aria-hidden>
+      </footer>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="footer__content">
       <address class="footer__address">

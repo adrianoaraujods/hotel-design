@@ -1,0 +1,174 @@
+/* Hero carousel: pure CSS, no JS. Two modes:
+   - Autoplay: each slide runs the same 18s keyframe loop, with different animation delays (0s / 6s / 12s), so one slide is visible at a time.
+   - Manual: the radios inputs hold the state. Checking one kills autoplay via :has(:checked) and force shows its slide. */
+
+.hero-section {
+	padding: 0;
+}
+
+.carousel {
+	position: relative;
+	width: 100%;
+	height: min(70vh, 640px);
+	min-height: 420px;
+	overflow: hidden;
+	background: #000;
+}
+
+.carousel__slides {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes dissolve {
+	0% {
+		opacity: 0;
+	}
+	3.33% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 1;
+	}
+	33.33% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.carousel__slide {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	animation: dissolve 18s infinite;
+	transition: opacity 300ms ease;
+}
+
+/* Stagger each slide by one third of the loop so they take turns: 18s total / 3 slides = 6s per slide. */
+.carousel__slide--1 {
+	animation-delay: 0s;
+}
+
+.carousel__slide--2 {
+	animation-delay: 6s;
+}
+
+.carousel__slide--3 {
+	animation-delay: 12s;
+}
+
+/* Motion-sensitive users: no cycling, input click only */
+@media (prefers-reduced-motion: reduce) {
+	.carousel__slide {
+		animation: none;
+	}
+
+	.carousel__slide--1 {
+		opacity: 1;
+	}
+}
+
+.carousel__slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Stop slide cycling if any radio is checked */
+.carousel:has(.carousel__dot:checked) .carousel__slide,
+.carousel:has(.carousel__dot:checked) .carousel__dot {
+	animation: none;
+}
+
+/* Manual override, showing the slide based on the current checked radio */
+.carousel:has(#hero-t1:checked) .carousel__slide--1,
+.carousel:has(#hero-t2:checked) .carousel__slide--2,
+.carousel:has(#hero-t3:checked) .carousel__slide--3 {
+	opacity: 1;
+}
+
+.carousel__footer {
+	z-index: 5;
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(calc(-50% - 32px));
+
+	display: flex;
+}
+
+.carousel__dots {
+	min-width: 144px;
+	background-color: var(--background-color);
+	margin-inline: -1px; /* fix gap between decorative corner images */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space-2);
+}
+
+@keyframes dot-cycle {
+	0% {
+		background-color: var(--muted-foreground-color);
+		width: 32px;
+	}
+	3.33% {
+		background-color: var(--foreground-color);
+		width: 48px;
+	}
+	30% {
+		background-color: var(--foreground-color);
+		width: 48px;
+	}
+	33.33% {
+		background-color: var(--muted-foreground-color);
+		width: 32px;
+	}
+	100% {
+		background-color: var(--muted-foreground-color);
+		width: 32px;
+	}
+}
+
+.carousel__dot {
+	appearance: none;
+	margin: 0;
+	width: 32px;
+	height: 16px;
+	border-radius: 999px;
+	background-color: var(--muted-foreground-color);
+	border: 1px solid var(--primary-color);
+	cursor: pointer;
+
+	animation: dot-cycle 18s infinite;
+	transition:
+		background-color 300ms ease,
+		transform 300ms ease,
+		width 300ms ease;
+}
+
+.carousel__dot:checked {
+	background-color: var(--foreground-color);
+	width: 48px;
+}
+
+.carousel__dot:hover {
+	background: var(--primary-color);
+}
+
+.carousel__dot--1 {
+	animation-delay: 0s;
+}
+
+.carousel__dot--2 {
+	animation-delay: 6s;
+}
+
+.carousel__dot--3 {
+	animation-delay: 12s;
+}
