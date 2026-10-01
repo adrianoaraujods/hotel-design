@@ -8,22 +8,22 @@
 	display: flex;
 	width: fit-content;
 
-	.navbar__content {
-		position: relative;
-		background-color: var(--background-color);
-		margin-inline: -1px; /* remove gap between images */
-
-		.navbar__items {
-			display: flex;
-			gap: var(--space-4);
-			height: 100%;
-			align-items: center;
-
-			a {
-				color: var(--foreground-color);
-				text-transform: uppercase;
-				text-decoration: none;
-			}
-		}
+	a {
+		color: var(--foreground-color);
+		text-transform: uppercase;
+		text-decoration: none;
 	}
+}
+
+.navbar__content {
+	position: relative;
+	background-color: var(--background-color);
+	margin-inline: -1px; /* remove gap between images */
+}
+
+.navbar__items {
+	display: flex;
+	gap: var(--space-4);
+	height: 100%;
+	align-items: center;
 }
