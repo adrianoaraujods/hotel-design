@@ -2,4 +2,72 @@
 @import url(../globals.css);
 
 @import url(../components/navbar.css);
+@import url(../components/carousel.css);
+@import url(../components/button.css);
+@import url(../components/card.css);
 @import url(../components/footer.css);
+
+.carousel--section {
+	height: min(70vh, 640px);
+	min-height: 420px;
+}
+
+.carousel--section .carousel__slide {
+	animation-duration: 12s;
+}
+
+.carousel--section .carousel__dot {
+	animation-duration: 12s;
+}
+
+.carousel--section .carousel__slide--1 {
+	animation-delay: 0s;
+}
+
+.carousel--section .carousel__slide--2 {
+	animation-delay: 6s;
+}
+
+.carousel--section .carousel__dot--1 {
+	animation-delay: 0s;
+}
+
+.carousel--section .carousel__dot--2 {
+	animation-delay: 6s;
+}
+
+.hero-section {
+	position: relative;
+	color: var(--primary-foreground-color);
+}
+
+.hero-section__content {
+	z-index: 6;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 1024px;
+	width: calc(100% - (var(--space-4) * 2));
+	top: var(--space-6);
+
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.card {
+	background-color: var(--background-color);
+	border-radius: var(--space-3);
+
+	max-width: 480px;
+	padding: var(--space-3);
+	gap: var(--space-3);
+}
+
+.card__price {
+	grid-row: 1 / 3;
+}
+
+.card__content {
+	color: var(--muted-foreground-color);
+}
