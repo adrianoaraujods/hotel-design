@@ -35,3 +35,11 @@ h6 {
 	text-transform: uppercase;
 	font-weight: 500;
 }
+
+main {
+	background-image: linear-gradient(
+		to bottom,
+		var(--background-color) 25%,
+		var(--surface-color) 75%
+	);
+}
