@@ -106,7 +106,7 @@
     </div>
 
     <!-- biome-ignore lint/a11y/useSemanticElements: cannot use section because it is already inside one -->
-    <div class="carousel" role="region" aria-roledescription="carousel" aria-label="Destaques do hotel">
+    <div class="carousel carousel--section" role="region" aria-roledescription="carousel" aria-label="Destaques do hotel">
 
       <!-- All slides render stacked (absolute, opacity 0). Autoplay fades each in/out via different animation delays -->
       <ul class="carousel__slides">
@@ -115,10 +115,10 @@
             alt="Fachada do hotel de frente a um lago">
         </li>
         <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 3">
-          <img src="./assets/images/alan-rodriguez-54HOhDVM71g-unsplash.webp" alt="Área externa do hotel com piscina">
+          <img src="./assets/images/alan-rodriguez-54HOhDVM71g-unsplash.webp" alt="Área externa do hotel com piscina" loading="lazy">
         </li>
         <li class="carousel__slide carousel__slide--3" aria-roledescription="slide" aria-label="3 de 3">
-          <img src="./assets/images/pexels-cottonbro-5371569.webp" alt="Café da manhã servido no hotel">
+          <img src="./assets/images/pexels-cottonbro-5371569.webp" alt="Café da manhã servido no hotel" loading="lazy">
         </li>
       </ul>
 
@@ -151,7 +151,22 @@
       <div class="suites">
 
         <article class="card card--suite">
-          <img class="card__image" src="./assets/images/suite-terrace-1.webp" alt="Suite com 1 cama de casal, poltrona, escrivaninha." />
+          <a href="./quartos/suite-standard.html" class="carousel" aria-roledescription="carousel" aria-label="Suite Standard">
+            <ul class="carousel__slides">
+            <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 2">
+              <img src="./assets/images/suite-standard-1.webp" alt="Quarto standard com cama de casal e poltrona">
+            </li>
+            <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 2">
+              <img src="./assets/images/suite-standard-2.webp" alt="Visão lateral da suite standard." loading="lazy">
+            </li>
+            </ul>
+            <footer class="carousel__footer">
+              <div class="carousel__dots">
+              <input class="carousel__dot carousel__dot--1" type="radio" name="suite-1" id="suite-1-t1" checked aria-label="Ver imagem 1 da Suite Standard">
+              <input class="carousel__dot carousel__dot--2" type="radio" name="suite-1" id="suite-1-t2" aria-label="Ver imagem 2 da Suite Standard">
+              </div>
+            </footer>
+          </a>
 
           <h3 class="card__title">Suite Standard</h3>
 
@@ -206,34 +221,45 @@
         </article>
 
         <article class="card card--suite">
-          <img class="card__image" src="./assets/images/suite-terrace-1.webp" alt="Suite com 1 cama de casal, poltrona, escrivaninha." />
+          <a href="./quartos/suite-dual.html" class="carousel" aria-roledescription="carousel" aria-label="Suite Dual">
+            <ul class="carousel__slides">
+            <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 3">
+              <img src="./assets/images/suite-dual-1.webp" alt="Suite dual com duas camas.">
+            </li>
+            <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 3">
+              <img src="./assets/images/suite-dual-2.webp" alt="Área de estar da suite dual." loading="lazy">
+            </li>
+            <li class="carousel__slide carousel__slide--3" aria-roledescription="slide" aria-label="3 de 3">
+              <img src="./assets/images/suite-dual-3.webp" alt="Detalhe do banheiro da suite dual." loading="lazy">
+            </li>
+            </ul>
+            <footer class="carousel__footer">
+              <div class="carousel__dots">
+              <input class="carousel__dot carousel__dot--1" type="radio" name="suite-4" id="suite-4-t1" checked aria-label="Ver imagem 1 da Suite Dual">
+              <input class="carousel__dot carousel__dot--2" type="radio" name="suite-4" id="suite-4-t2" aria-label="Ver imagem 2 da Suite Dual">
+              <input class="carousel__dot carousel__dot--3" type="radio" name="suite-4" id="suite-4-t3" aria-label="Ver imagem 3 da Suite Dual">
+              </div>
+            </footer>
+          </a>
 
-          <h3 class="card__title">Suite Standard</h3>
+          <h3 class="card__title">Suite Dual</h3>
 
-          <p class="card__price"><span>R$ 320</span><span>por noite</span></p>
+          <p class="card__price"><span>R$ 430</span><span>por noite</span></p>
 
           <ul class="card__badges">
 
             <li class="card__badge">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <title>Cama de casal</title>
-                <path d="M18.3333 14.5834H1.66666" stroke="#676767" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M18.3333 17.5V13.3333C18.3333 11.762 18.3333 10.9763 17.8452 10.4882C17.357 10 16.5713 10 15 10H4.99999C3.42864 10 2.64296 10 2.15481 10.4882C1.66666 10.9763 1.66666 11.762 1.66666 13.3333V17.5"
-                  stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M9.16667 10V8.51117C9.16667 8.19393 9.119 8.08784 8.87475 7.96282C8.36625 7.70243 7.74887 7.5 7.08333 7.5C6.41779 7.5 5.80046 7.70243 5.29187 7.96282C5.04767 8.08784 5 8.19393 5 8.51117V10"
-                  stroke="#676767" stroke-width="1.5" stroke-linecap="round" />
-                <path
-                  d="M15 10V8.51117C15 8.19393 14.9523 8.08784 14.7081 7.96282C14.1996 7.70243 13.5823 7.5 12.9167 7.5C12.2511 7.5 11.6338 7.70243 11.1253 7.96282C10.881 8.08784 10.8333 8.19393 10.8333 8.51117V10"
-                  stroke="#676767" stroke-width="1.5" stroke-linecap="round" />
-                <path
-                  d="M17.5 10V6.13381C17.5 5.55744 17.5 5.26926 17.3399 4.99711C17.1797 4.72496 16.9517 4.58409 16.4953 4.30236C14.6557 3.16648 12.4161 2.5 10 2.5C7.58389 2.5 5.34428 3.16648 3.50465 4.30236C3.04837 4.58409 2.82023 4.72496 2.66011 4.99711C2.5 5.26926 2.5 5.55744 2.5 6.13381V10"
-                  stroke="#676767" stroke-width="1.5" stroke-linecap="round" />
+                <title>Cama de solteiro</title>
+                <path d="M1.66669 2.91663V17.0833" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.3333 7.08337V17.0834" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66669 7.08337L5.00002 8.75004H18.3334" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.66669 12.9166H5.00002M18.3334 12.9166H15.8334" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 8.75V13.75C5 15.1289 5.28777 15.4167 6.66667 15.4167H14.1667C15.5456 15.4167 15.8333 15.1289 15.8333 13.75V8.75" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.67804 8.75004C5.7449 8.39671 5.85019 8.02711 5.82975 7.66432C5.79953 7.12804 5.53083 6.63858 5.10535 6.34478C4.93734 6.22876 4.56669 6.11037 4.17725 6.00915C3.60902 5.86146 3.3249 5.78761 2.99287 5.86374C2.75703 5.91782 2.55217 6.04327 2.25931 6.26737C2.22705 6.29206 2.21091 6.3044 2.18576 6.32526C1.98694 6.49014 1.81065 6.72858 1.71129 6.96699C1.69872 6.99715 1.68804 7.02589 1.66669 7.08338" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
 
-              <span>1 cama</span>
+              <span>2 camas</span>
             </li>
 
             <li class="card__badge">
@@ -253,7 +279,7 @@
               </svg>
 
 
-              <span>34 m&sup2;</span>
+              <span>24 m&sup2;</span>
             </li>
 
           </ul>
@@ -261,11 +287,26 @@
         </article>
 
         <article class="card card--suite">
-          <img class="card__image" src="./assets/images/suite-terrace-1.webp" alt="Suite com 1 cama de casal, poltrona, escrivaninha." />
+          <a href="./quartos/suite-premium.html" class="carousel" aria-roledescription="carousel" aria-label="Suite Premium">
+            <ul class="carousel__slides">
+            <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 2">
+              <img src="./assets/images/suite-premium-1.webp" alt="Suite premium com cama king e estar.">
+            </li>
+            <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 2">
+              <img src="./assets/images/suite-premium-2.webp" alt="Detalhe da suite premium." loading="lazy">
+            </li>
+            </ul>
+            <footer class="carousel__footer">
+              <div class="carousel__dots">
+              <input class="carousel__dot carousel__dot--1" type="radio" name="suite-5" id="suite-5-t1" checked aria-label="Ver imagem 1 da Suite Premium">
+              <input class="carousel__dot carousel__dot--2" type="radio" name="suite-5" id="suite-5-t2" aria-label="Ver imagem 2 da Suite Premium">
+              </div>
+            </footer>
+          </a>
 
-          <h3 class="card__title">Suite Standard</h3>
+          <h3 class="card__title">Suite Premium</h3>
 
-          <p class="card__price"><span>R$ 320</span><span>por noite</span></p>
+          <p class="card__price"><span>R$ 620</span><span>por noite</span></p>
 
           <ul class="card__badges">
 
@@ -288,7 +329,7 @@
                   stroke="#676767" stroke-width="1.5" stroke-linecap="round" />
               </svg>
 
-              <span>1 cama</span>
+              <span>2 camas</span>
             </li>
 
             <li class="card__badge">
@@ -307,8 +348,7 @@
                   stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
 
-
-              <span>34 m&sup2;</span>
+              <span>32 m&sup2;</span>
             </li>
 
           </ul>
@@ -316,11 +356,13 @@
         </article>
 
         <article class="card card--suite">
-          <img class="card__image" src="./assets/images/suite-terrace-1.webp" alt="Suite com 1 cama de casal, poltrona, escrivaninha." />
+          <a href="./quartos/suite-balcony.html" class="card__image" aria-label="Suite Balcony">
+            <img src="./assets/images/suite-balcony.webp" alt="Suite com varanda e cama de casal.">
+          </a>
 
-          <h3 class="card__title">Suite Standard</h3>
+          <h3 class="card__title">Suite Balcony</h3>
 
-          <p class="card__price"><span>R$ 320</span><span>por noite</span></p>
+          <p class="card__price"><span>R$ 1.280</span><span>por noite</span></p>
 
           <ul class="card__badges">
 
@@ -343,7 +385,7 @@
                   stroke="#676767" stroke-width="1.5" stroke-linecap="round" />
               </svg>
 
-              <span>1 cama</span>
+              <span>2+1 cama</span>
             </li>
 
             <li class="card__badge">
@@ -362,8 +404,7 @@
                   stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
 
-
-              <span>34 m&sup2;</span>
+              <span>48 m&sup2;</span>
             </li>
 
           </ul>
@@ -371,11 +412,26 @@
         </article>
 
         <article class="card card--suite">
-          <img class="card__image" src="./assets/images/suite-terrace-1.webp" alt="Suite com 1 cama de casal, poltrona, escrivaninha." />
+          <a href="./quartos/suite-garden.html" class="carousel" aria-roledescription="carousel" aria-label="Suite Garden">
+            <ul class="carousel__slides">
+            <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 2">
+              <img src="./assets/images/suite-garden-1.webp" alt="Quarto garden com cama de casal e vista para o jardim.">
+            </li>
+            <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 2">
+              <img src="./assets/images/suite-garden-2.webp" alt="Detalhe da suite garden com poltrona." loading="lazy">
+            </li>
+            </ul>
+            <footer class="carousel__footer">
+              <div class="carousel__dots">
+              <input class="carousel__dot carousel__dot--1" type="radio" name="suite-2" id="suite-2-t1" checked aria-label="Ver imagem 1 da Suite Garden" loading="lazy">
+              <input class="carousel__dot carousel__dot--2" type="radio" name="suite-2" id="suite-2-t2" aria-label="Ver imagem 2 da Suite Garden" loading="lazy">
+              </div>
+            </footer>
+          </a>
 
-          <h3 class="card__title">Suite Standard</h3>
+          <h3 class="card__title">Suite Garden</h3>
 
-          <p class="card__price"><span>R$ 320</span><span>por noite</span></p>
+          <p class="card__price"><span>R$ 1.420</span><span>por noite</span></p>
 
           <ul class="card__badges">
 
@@ -398,7 +454,7 @@
                   stroke="#676767" stroke-width="1.5" stroke-linecap="round" />
               </svg>
 
-              <span>1 cama</span>
+              <span>2+1 camas</span>
             </li>
 
             <li class="card__badge">
@@ -418,7 +474,7 @@
               </svg>
 
 
-              <span>34 m&sup2;</span>
+              <span>42 m&sup2;</span>
             </li>
 
           </ul>
@@ -426,11 +482,26 @@
         </article>
 
         <article class="card card--suite">
-          <img class="card__image" src="./assets/images/suite-terrace-1.webp" alt="Suite com 1 cama de casal, poltrona, escrivaninha." />
+          <a href="./quartos/suite-terrace.html" class="carousel" aria-roledescription="carousel" aria-label="Suite Terrace">
+            <ul class="carousel__slides">
+            <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 2">
+              <img src="./assets/images/suite-terrace-1.webp" alt="Suite com terraço, cama de casal e escrivaninha.">
+            </li>
+            <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 2">
+              <img src="./assets/images/suite-terrace-2.webp" alt="Terraço amplo com área de estar." loading="lazy">
+            </li>
+            </ul>
+            <footer class="carousel__footer">
+              <div class="carousel__dots">
+              <input class="carousel__dot carousel__dot--1" type="radio" name="suite-3" id="suite-3-t1" checked aria-label="Ver imagem 1 da Suite Terrace" loading="lazy">
+              <input class="carousel__dot carousel__dot--2" type="radio" name="suite-3" id="suite-3-t2" aria-label="Ver imagem 2 da Suite Terrace" loading="lazy">
+              </div>
+            </footer>
+          </a>
 
-          <h3 class="card__title">Suite Standard</h3>
+          <h3 class="card__title">Suite Terrace</h3>
 
-          <p class="card__price"><span>R$ 320</span><span>por noite</span></p>
+          <p class="card__price"><span>R$ 2.170</span><span>por noite</span></p>
 
           <ul class="card__badges">
 
@@ -453,7 +524,7 @@
                   stroke="#676767" stroke-width="1.5" stroke-linecap="round" />
               </svg>
 
-              <span>1 cama</span>
+              <span>2+1 camas</span>
             </li>
 
             <li class="card__badge">
@@ -473,7 +544,7 @@
               </svg>
 
 
-              <span>34 m&sup2;</span>
+              <span>54 m&sup2;</span>
             </li>
 
           </ul>
