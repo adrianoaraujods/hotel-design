@@ -83,6 +83,138 @@
     <img class="navbar__corner" src="./assets/corner.svg" aria-hidden>
   </header>
 
+  <section class="exp-hero">
+    <!-- biome-ignore lint/a11y/useSemanticElements: cannot use section because it is already inside one -->
+    <div class="carousel carousel--section carousel--exp" role="region" aria-roledescription="carousel"
+      aria-label="Destaques das experiências">
+      <ul class="carousel__slides">
+        <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 3">
+          <img src="./assets/images/structure.webp" alt="Área de lazer do hotel com piscina">
+        </li>
+        <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 3">
+          <img src="./assets/images/hall.webp" alt="Hall de entrada do hotel" loading="lazy">
+        </li>
+        <li class="carousel__slide carousel__slide--3" aria-roledescription="slide" aria-label="3 de 3">
+          <img src="./assets/images/restaurant.webp" alt="Salão do restaurante do hotel" loading="lazy">
+        </li>
+      </ul>
+    </div>
+    <div class="exp-hero__content">
+      <a class="button button--secondary exp-hero__back" href="./index.html">&larr; Voltar</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="exp" aria-labelledby="exp-title">
+      <header class="exp__header">
+        <h1 class="exp__title" id="exp-title">Experiências Únicas & Memórias Duradouras</h1>
+
+        <p class="exp__subtitle">Vivencie um cuidado e atenção a detalhes que vai marcar
+          sua história em Belo Horizonte</p>
+      </header>
+
+      <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+      <ul class="exp-list" role="list">
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/experience-meditation.webp" alt="Sessão de meditação guiada ao ar livre">
+            <div class="exp-card__caption"><span>Experiência</span>
+              <h3>Meditação Guiada</h3>
+            </div>
+          </div>
+        </li>
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/experience-massage.webp" alt="Sessão de massagem no spa do hotel">
+            <div class="exp-card__caption"><span>Experiência</span>
+              <h3>Massagem</h3>
+            </div>
+          </div>
+        </li>
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/experience-thermal.webp" alt="Piscina de águas termais do hotel">
+            <div class="exp-card__caption"><span>Experiência</span>
+              <h3>Águas Termais</h3>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+      <ul class="exp-list exp-list--right" role="list">
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/experience-animal-theraphy.webp" alt="Hóspede em sessão de terapia com animais"
+              loading="lazy">
+            <div class="exp-card__caption"><span>Experiência</span>
+              <h3>Terapia com Animais</h3>
+            </div>
+          </div>
+        </li>
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/experience-horse-walk.webp" alt="Passeio a cavalo por uma trilha" loading="lazy">
+            <div class="exp-card__caption"><span>Experiência</span>
+              <h3>Passeio a Cavalo</h3>
+            </div>
+          </div>
+        </li>
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/experience-tour.webp" alt="Tour pelo centro histórico da cidade" loading="lazy">
+            <div class="exp-card__caption"><span>Experiência</span>
+              <h3>Tour Histórico</h3>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+      <ul class="exp-list" role="list">
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/gastronomy.webp" alt="Aula de gastronomia mineira" loading="lazy">
+            <div class="exp-card__caption"><span>Restaurante</span>
+              <h3>Jornada Gastronômica</h3>
+            </div>
+          </div>
+        </li>
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/barbekill.webp" alt="Churrasco preparado na brasa" loading="lazy">
+            <div class="exp-card__caption"><span>Restaurante</span>
+              <h3>Churrascaria</h3>
+            </div>
+          </div>
+        </li>
+        <li class="card exp-card">
+          <div class="exp-card__image">
+            <img src="./assets/images/menu-sea-food.webp" alt="Frutos do mar servidos no restaurante" loading="lazy">
+            <div class="exp-card__caption"><span>Restaurante</span>
+              <h3>Frutos do Mar</h3>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="exp-restaurant" aria-labelledby="exp-restaurant-title">
+      <span class="exp-restaurant__image">
+        <img src="./assets/images/restaurant.webp" alt="Mesa posta no salão do restaurante do hotel" loading="lazy">
+      </span>
+
+      <div class="exp-restaurant__content">
+        <h2 class="exp-restaurant__title" id="exp-restaurant-title">Restaurante</h2>
+
+        <p>Do café da manhã ao jantar, a cozinha mineira do Grand Stay serve pratos que valorizam ingredientes
+          locais em um ambiente acolhedor.</p>
+
+        <a class="button" href="./cardapio.html">Ver cardápio completo</a>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="footer__content">
       <address class="footer__address">

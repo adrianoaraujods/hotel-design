@@ -2,4 +2,176 @@
 @import url(../globals.css);
 
 @import url(../components/navbar.css);
+@import url(../components/carousel.css);
+@import url(../components/button.css);
+@import url(../components/card.css);
 @import url(../components/footer.css);
+
+.exp-hero {
+	position: relative;
+	background: #000;
+}
+
+.carousel--exp {
+	height: min(32vh, 240px);
+	min-height: 220px;
+}
+
+.exp-hero img {
+	filter: brightness(0.85);
+}
+
+.exp-hero__content {
+	z-index: 6;
+	position: absolute;
+	inset: 0;
+	max-width: 1024px;
+	margin-inline: auto;
+	padding: 0 var(--space-3);
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+}
+
+.exp-hero__back {
+	border-radius: var(--space-2);
+	box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+	pointer-events: auto;
+}
+
+.exp {
+	max-width: 1024px;
+	margin-inline: auto;
+	padding: var(--space-5) var(--space-3) 0;
+}
+
+.exp__title {
+	font-size: var(--text-2xl);
+	line-height: 1.1;
+	max-width: 22ch;
+}
+
+.exp__subtitle {
+	margin-top: var(--space-3);
+	max-width: 48ch;
+	font-size: var(--text-lg);
+	line-height: 1.3;
+}
+
+.exp-list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 220px));
+	gap: var(--space-4) var(--space-3);
+	list-style: none;
+	margin-top: var(--space-5);
+	justify-content: start;
+	padding: 0;
+}
+
+.exp-list--right {
+	justify-content: end;
+}
+
+.exp-card {
+	display: block;
+}
+
+.exp-card__image {
+	position: relative;
+	border-radius: var(--space-2);
+	overflow: hidden;
+	aspect-ratio: 3 / 5;
+}
+
+.exp-card__image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.exp-card__caption {
+	position: absolute;
+	inset: auto 0 0 0;
+	padding: var(--space-4) var(--space-3) var(--space-3);
+	background: linear-gradient(to top, rgb(0 0 0 / 0.75) 0%, rgb(0 0 0 / 0) 100%);
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.exp-card__caption span {
+	display: block;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	opacity: 0.85;
+}
+
+.exp-card__caption h3 {
+	font-size: var(--text);
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.exp-restaurant {
+	max-width: 1024px;
+	margin-inline: auto;
+	padding: var(--space-5) var(--space-3) var(--space-6);
+	display: grid;
+	grid-template-columns: 280px 1fr;
+	gap: var(--space-4);
+	align-items: start;
+}
+
+.exp-restaurant__image {
+	display: block;
+	border-radius: var(--space-2);
+	overflow: hidden;
+	aspect-ratio: 4 / 3;
+}
+
+.exp-restaurant__image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.exp-restaurant__title {
+	font-size: var(--text-xl);
+	margin-bottom: var(--space-3);
+}
+
+.exp-restaurant__content p {
+	margin-bottom: var(--space-3);
+	line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+	.exp-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 560px) {
+	.exp__title {
+		font-size: var(--text-xl);
+	}
+
+	.exp__subtitle {
+		font-size: var(--text);
+	}
+
+	.exp-list,
+	.exp-list--right {
+		grid-template-columns: 1fr;
+		justify-content: stretch;
+	}
+
+	.exp-card__image {
+		aspect-ratio: 3 / 4;
+	}
+
+	.exp-restaurant {
+		grid-template-columns: 1fr;
+	}
+}
