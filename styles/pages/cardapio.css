@@ -2,4 +2,165 @@
 @import url(../globals.css);
 
 @import url(../components/navbar.css);
+@import url(../components/carousel.css);
+@import url(../components/button.css);
+@import url(../components/card.css);
 @import url(../components/footer.css);
+
+.menu-hero {
+	position: relative;
+	background: #000;
+}
+
+.carousel--menu {
+	height: min(32vh, 240px);
+	min-height: 220px;
+}
+
+.menu-hero img {
+	filter: brightness(0.85);
+}
+
+.menu-hero__content {
+	z-index: 6;
+	position: absolute;
+	inset: 0;
+	max-width: 1024px;
+	margin-inline: auto;
+	padding: 0 var(--space-3);
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+}
+
+.menu-hero__back {
+	border-radius: var(--space-2);
+	box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+	pointer-events: auto;
+}
+
+.menu {
+	max-width: 1024px;
+	margin-inline: auto;
+	padding: var(--space-5) var(--space-3) var(--space-6);
+}
+
+.menu__title {
+	font-size: var(--text-2xl);
+	margin-bottom: var(--space-4);
+}
+
+.menu__filters {
+	display: flex;
+	gap: var(--space-4);
+	overflow-x: auto;
+	margin-bottom: var(--space-4);
+	padding-bottom: var(--space-2);
+}
+
+.menu__filters input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+.menu__filters label {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: var(--text-lg);
+	white-space: nowrap;
+	cursor: pointer;
+	padding-bottom: var(--space-1);
+	border-bottom: 2px solid transparent;
+}
+
+.menu__filters label:hover {
+	border-color: var(--muted-foreground-color);
+}
+
+#cat-entradas:checked ~ label[for="cat-entradas"],
+#cat-principal:checked ~ label[for="cat-principal"],
+#cat-lacarte:checked ~ label[for="cat-lacarte"],
+#cat-criancas:checked ~ label[for="cat-criancas"],
+#cat-bebidas:checked ~ label[for="cat-bebidas"] {
+	border-color: var(--foreground-color);
+}
+
+.dishes {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--space-4) var(--space-3);
+	list-style: none;
+}
+
+.menu .dish {
+	display: none;
+	gap: var(--space-1);
+	align-content: start;
+}
+
+.menu:has(#cat-entradas:checked) .dish[data-cat="entradas"],
+.menu:has(#cat-principal:checked) .dish[data-cat="principal"],
+.menu:has(#cat-lacarte:checked) .dish[data-cat="lacarte"],
+.menu:has(#cat-criancas:checked) .dish[data-cat="criancas"],
+.menu:has(#cat-bebidas:checked) .dish[data-cat="bebidas"] {
+	display: grid;
+}
+
+.dish .card__image {
+	border-radius: var(--space-2);
+	overflow: hidden;
+}
+
+.dish .card__title,
+.dish .card__price {
+	font-size: var(--text);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.dish .card__title {
+	grid-column: 1;
+}
+
+.dish .card__price {
+	grid-column: 2;
+	grid-row: auto;
+	flex-direction: row;
+	justify-content: flex-end;
+	white-space: nowrap;
+}
+
+.dish .card__badges {
+	grid-column: 1 / -1;
+	font-size: var(--text-sm);
+	flex-wrap: wrap;
+	row-gap: var(--space-1);
+}
+
+.dish .card__badge svg {
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+	.dishes {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 560px) {
+	.menu__title {
+		font-size: var(--text-xl);
+	}
+
+	.menu__filters label {
+		font-size: var(--text);
+	}
+
+	.dishes {
+		grid-template-columns: 1fr;
+	}
+}
