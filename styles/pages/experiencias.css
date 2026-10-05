@@ -90,6 +90,11 @@
 	object-fit: cover;
 }
 
+.exp-card:focus-visible {
+	outline: 2px solid var(--primary-color);
+	outline-offset: 2px;
+}
+
 .exp-card__caption {
 	position: absolute;
 	inset: auto 0 0 0;
@@ -97,6 +102,68 @@
 	background: linear-gradient(to top, rgb(0 0 0 / 0.75) 0%, rgb(0 0 0 / 0) 100%);
 	color: #fff;
 	text-transform: uppercase;
+	transition: opacity 200ms ease;
+}
+
+.exp-card__preview {
+	position: absolute;
+	inset: auto var(--space-2) var(--space-2) var(--space-2);
+	background: var(--background-color);
+	color: var(--foreground-color);
+	border-radius: var(--space-2);
+	padding: var(--space-3);
+	box-shadow: 0 8px 24px rgb(0 0 0 / 0.25);
+	opacity: 0;
+	translate: 0 8px;
+	pointer-events: none;
+	transition:
+		opacity 200ms ease,
+		translate 200ms ease;
+}
+
+.exp-card__preview span {
+	display: block;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	text-transform: uppercase;
+	opacity: 0.85;
+}
+
+.exp-card__preview h3 {
+	font-size: var(--text);
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.exp-card__preview p {
+	margin-top: var(--space-2);
+	font-size: var(--text-sm);
+	line-height: 1.4;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.exp-card__cta {
+	margin-top: var(--space-3);
+	align-self: flex-start;
+	font-size: var(--text-sm);
+}
+
+.exp-card:hover .exp-card__preview,
+.exp-card:focus-within .exp-card__preview,
+.exp-card:focus-visible .exp-card__preview {
+	opacity: 1;
+	translate: 0 0;
+	pointer-events: auto;
+}
+
+.exp-card:hover .exp-card__caption,
+.exp-card:focus-within .exp-card__caption,
+.exp-card:focus-visible .exp-card__caption {
+	opacity: 0;
 }
 
 .exp-card__caption span {
