@@ -2,4 +2,386 @@
 @import url(../globals.css);
 
 @import url(../components/navbar.css);
+@import url(../components/carousel.css);
+@import url(../components/button.css);
 @import url(../components/footer.css);
+
+.structure-hero {
+	position: relative;
+	background: #000;
+}
+
+.carousel--structure {
+	height: min(32vh, 240px);
+	min-height: 220px;
+}
+
+.structure-hero img {
+	filter: brightness(0.85);
+}
+
+.structure-hero__content {
+	z-index: 6;
+	position: absolute;
+	inset: 0;
+	max-width: 1024px;
+	margin-inline: auto;
+	padding: 0 var(--space-3);
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+}
+
+.structure-hero__back {
+	border-radius: var(--space-2);
+	box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+	pointer-events: auto;
+}
+
+.structure {
+	max-width: 1024px;
+	margin-inline: auto;
+	padding: var(--space-5) var(--space-3);
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto 1fr auto auto;
+	gap: var(--space-4);
+}
+
+.structure__title {
+	grid-column: 1 / -1;
+	font-size: var(--text-2xl);
+}
+
+.structure__image {
+	display: block;
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: var(--space-2);
+}
+
+.structure__image--hall {
+	grid-column: 1;
+	grid-row: 2 / span 3;
+	height: 100%;
+}
+
+.structure__image--restaurant {
+	grid-column: 2;
+	grid-row: 2;
+	width: clamp(220px, 30vw, 320px);
+	justify-self: start;
+	align-self: start;
+}
+
+.structure__text {
+	grid-column: 2;
+	grid-row: 3;
+	max-width: 40ch;
+	line-height: 1.5;
+}
+
+.structure__cta {
+	grid-column: 2;
+	grid-row: 4;
+	justify-self: start;
+}
+
+.structure-video {
+	position: relative;
+	overflow: hidden;
+	height: min(50vh, 440px);
+	min-height: 320px;
+
+	display: flex;
+	align-items: center;
+
+	color: var(--primary-foreground-color);
+	background: #000;
+}
+
+.structure-video__video {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.structure-video::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgb(0 0 0 / 0.1);
+}
+
+.structure-video__content {
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	max-width: 1024px;
+	margin-inline: auto;
+	padding-inline: var(--space-3);
+}
+
+.structure-video--pool .structure-video__content {
+	text-align: right;
+}
+
+.structure-video__title {
+	font-size: var(--text-xl);
+	margin-bottom: var(--space-2);
+}
+
+.structure-video__text {
+	max-width: 42ch;
+	line-height: 1.4;
+}
+
+.structure-video--pool {
+	.structure-video__text {
+		margin-left: auto;
+	}
+}
+
+.structure-suites {
+	display: flex;
+	align-items: center;
+	gap: var(--space-4);
+	padding-block: var(--space-6);
+	padding-left: max(var(--space-3), calc((100% - 1024px) / 2));
+}
+
+.structure-suites__intro {
+	max-width: 480px;
+	flex-shrink: 0;
+}
+
+.structure-suites__title {
+	font-size: var(--text-xl);
+	margin-bottom: var(--space-3);
+}
+
+.structure-suites__text {
+	line-height: 1.4;
+	margin-bottom: var(--space-3);
+}
+
+.structure-suites__scroll {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	gap: var(--space-3);
+	padding-bottom: var(--space-2);
+	overflow-x: auto;
+	scroll-snap-type: x proximity;
+}
+
+.structure-suites__scroll::-webkit-scrollbar {
+	height: 8px;
+}
+
+.structure-suites__scroll::-webkit-scrollbar-button {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+.structure-suites__scroll::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.structure-suites__scroll::-webkit-scrollbar-thumb {
+	background: var(--muted-foreground-color);
+	border-radius: 999px;
+}
+
+.structure-suites__scroll::-webkit-scrollbar-thumb:hover {
+	background: var(--primary-color);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+	.structure-suites__scroll {
+		scrollbar-width: thin;
+		scrollbar-color: var(--muted-foreground-color) transparent;
+	}
+}
+
+.suite-card {
+	flex: 0 0 220px;
+	scroll-snap-align: start;
+}
+
+.suite-card__image {
+	position: relative;
+	border-radius: var(--space-2);
+	overflow: hidden;
+	aspect-ratio: 3 / 5;
+}
+
+.suite-card__image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.suite-card__caption {
+	position: absolute;
+	inset: auto 0 0 0;
+	padding: var(--space-4) var(--space-3) var(--space-3);
+	background: linear-gradient(
+		to top,
+		rgb(0 0 0 / 0.75) 0%,
+		rgb(0 0 0 / 0) 100%
+	);
+	color: #fff;
+	text-transform: uppercase;
+	transition: opacity 200ms ease;
+}
+
+.suite-card__caption span {
+	display: block;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	opacity: 0.85;
+}
+
+.suite-card__caption h3 {
+	font-size: var(--text);
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.suite-card__preview {
+	position: absolute;
+	inset: auto var(--space-2) var(--space-2) var(--space-2);
+	background: var(--background-color);
+	color: var(--foreground-color);
+	border-radius: var(--space-2);
+	padding: var(--space-3);
+	box-shadow: 0 8px 24px rgb(0 0 0 / 0.25);
+	opacity: 0;
+	translate: 0 8px;
+	pointer-events: none;
+	transition:
+		opacity 200ms ease,
+		translate 200ms ease;
+}
+
+.suite-card__preview span {
+	display: block;
+	font-size: var(--text-sm);
+	font-weight: 400;
+	text-transform: uppercase;
+	opacity: 0.85;
+}
+
+.suite-card__preview h3 {
+	font-size: var(--text);
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+
+.suite-card__preview p {
+	margin-top: var(--space-2);
+	font-size: var(--text-sm);
+	line-height: 1.4;
+	display: -webkit-box;
+	line-clamp: 5;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.suite-card__cta {
+	margin-top: var(--space-3);
+	font-size: var(--text-sm);
+}
+
+.suite-card:hover .suite-card__preview,
+.suite-card:focus-within .suite-card__preview {
+	opacity: 1;
+	translate: 0 0;
+	pointer-events: auto;
+}
+
+.suite-card:hover .suite-card__caption,
+.suite-card:focus-within .suite-card__caption {
+	opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.structure-video__video {
+		display: none;
+	}
+
+	.structure-video--pool {
+		background:
+			url(../../assets/images/alan-rodriguez-54HOhDVM71g-unsplash.webp) center /
+			cover no-repeat;
+	}
+
+	.structure-video--farm {
+		background:
+			url(../../assets/images/experience-horse-walk.webp) center / cover
+			no-repeat;
+	}
+}
+
+@media (max-width: 768px) {
+	.structure-suites__intro {
+		max-width: 340px;
+	}
+
+	.structure-suites__title {
+		font-size: var(--text-lg);
+	}
+
+	.structure__title {
+		font-size: var(--text-xl);
+	}
+
+	.structure {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto;
+	}
+
+	.structure__image--hall {
+		grid-column: 1;
+		grid-row: 2;
+		width: calc(100% - var(--space-4));
+		height: auto;
+	}
+
+	.structure__image--restaurant {
+		grid-column: 1;
+		grid-row: 2;
+		width: 65%;
+		margin-top: 45%;
+		margin-left: auto;
+		z-index: 1;
+	}
+
+	.structure__text {
+		grid-column: 1;
+		grid-row: 3;
+		max-width: none;
+	}
+
+	.structure__cta {
+		grid-column: 1;
+		grid-row: 4;
+	}
+
+	.structure-suites {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.structure-suites__intro {
+		padding-right: var(--space-3);
+	}
+}

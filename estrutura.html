@@ -83,6 +83,169 @@
     <img class="navbar__corner" src="./assets/corner.svg" aria-hidden>
   </header>
 
+  <section class="structure-hero">
+    <!-- biome-ignore lint/a11y/useSemanticElements: cannot use section because it is already inside one -->
+    <div class="carousel carousel--section carousel--structure" role="region" aria-roledescription="carousel"
+      aria-label="Destaques da estrutura do hotel">
+      <ul class="carousel__slides">
+        <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 3">
+          <img src="./assets/images/structure.webp" alt="Visão panorâmica do Grand Stay Hotel">
+        </li>
+        <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 3">
+          <img src="./assets/images/alan-rodriguez-54HOhDVM71g-unsplash.webp" alt="Área externa do hotel com piscina"
+            loading="lazy">
+        </li>
+        <li class="carousel__slide carousel__slide--3" aria-roledescription="slide" aria-label="3 de 3">
+          <img src="./assets/images/pexels-cottonbro-5371569.webp" alt="Café da manhã servido no hotel" loading="lazy">
+        </li>
+      </ul>
+    </div>
+    <div class="structure-hero__content">
+      <a class="button button--secondary structure-hero__back" href="./index.html">&larr; Voltar</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="structure" aria-labelledby="structure-title">
+      <h1 class="structure__title" id="structure-title">Estrutura</h1>
+
+      <img class="structure__image structure__image--hall" src="./assets/images/hall.webp"
+        alt="Hall de entrada do hotel com balcão de recepção">
+      <img class="structure__image structure__image--restaurant" src="./assets/images/restaurant.webp"
+        alt="Salão do restaurante do hotel" loading="lazy">
+
+      <p class="structure__text">São 120 apartamentos distribuídos em cinco andares, recepção 24 horas, piscina coberta climatizada, academia equipada e áreas comuns pensadas para receber você com conforto. Do hall de entrada ao restaurante, cada espaço do Grand Stay foi planejado para o seu descanso.</p>
+
+      <a class="button structure__cta" href="./experiencias.html">Ver experiências</a>
+    </section>
+
+    <section class="structure-video structure-video--pool" aria-labelledby="pool-title">
+      <video class="structure-video__video" src="./assets/videos/pool.mp4" autoplay muted loop playsinline
+        aria-hidden="true"></video>
+
+      <div class="structure-video__content">
+        <h2 class="structure-video__title" id="pool-title">Área de Lazer</h2>
+
+        <p class="structure-video__text">Cercada por uma vista deslumbrante com palmeiras tropicais e pscinas com bordas infinitas. Com diferentes iluminações criando cenários propensosos para se divertir e também para relaxar.</p>
+      </div>
+    </section>
+
+    <section class="structure-suites" aria-labelledby="suites-title">
+      <div class="structure-suites__intro">
+        <h2 class="structure-suites__title" id="suites-title">Quartos & Acomodações</h2>
+
+        <p class="structure-suites__text">Nossas suites são decoradas e estruturadas para maximizar seu conforto e
+          satisfação. Com as melhores roupas de camas, travesseiros e colchões ortopédicos para garantir sua saúde e
+          descanso ótimo.</p>
+
+        <a class="button" href="./index.html#quartos">Ver todos os Quartos</a>
+      </div>
+
+      <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+      <ul class="structure-suites__scroll" role="list">
+        <li class="suite-card">
+          <div class="suite-card__image">
+            <img src="./assets/images/suite-standard-1.webp" alt="Quarto standard com cama de casal e poltrona">
+            <div class="suite-card__caption"><span>Suíte</span>
+              <h3>Suite Standard</h3>
+            </div>
+            <div class="suite-card__preview">
+              <span>Suíte</span>
+              <h3>Suite Standard</h3>
+              <p>Quarto aconchegante com cama de casal, área de trabalho e todos os confortos para uma estadia prática
+                em Belo Horizonte.</p>
+              <a class="button suite-card__cta" href="./quartos/suite-standard.html">Ver detalhes</a>
+            </div>
+          </div>
+        </li>
+        <li class="suite-card">
+          <div class="suite-card__image">
+            <img src="./assets/images/suite-dual-1.webp" alt="Suite dual com duas camas" loading="lazy">
+            <div class="suite-card__caption"><span>Suíte</span>
+              <h3>Suite Dual</h3>
+            </div>
+            <div class="suite-card__preview">
+              <span>Suíte</span>
+              <h3>Suite Dual</h3>
+              <p>Ideal para famílias: duas camas de casal, banheiro amplo e espaço de sobra para descansar depois de
+                passear pela cidade.</p>
+              <a class="button suite-card__cta" href="./index.html#quartos">Ver detalhes</a>
+            </div>
+          </div>
+        </li>
+        <li class="suite-card">
+          <div class="suite-card__image">
+            <img src="./assets/images/suite-premium-1.webp" alt="Suite premium com cama king e estar" loading="lazy">
+            <div class="suite-card__caption"><span>Suíte</span>
+              <h3>Suite Premium</h3>
+            </div>
+            <div class="suite-card__preview">
+              <span>Suíte</span>
+              <h3>Suite Premium</h3>
+              <p>Suíte espaçosa com cama king-size, banheiro com banheira e poltrona de leitura junto à janela.</p>
+              <a class="button suite-card__cta" href="./index.html#quartos">Ver detalhes</a>
+            </div>
+          </div>
+        </li>
+        <li class="suite-card">
+          <div class="suite-card__image">
+            <img src="./assets/images/suite-balcony.webp" alt="Suite com varanda e cama de casal" loading="lazy">
+            <div class="suite-card__caption"><span>Suíte</span>
+              <h3>Suite Balcony</h3>
+            </div>
+            <div class="suite-card__preview">
+              <span>Suíte</span>
+              <h3>Suite Balcony</h3>
+              <p>Suíte com varanda privativa e vista para o lago, perfeita para o café da manhã ao ar livre.</p>
+              <a class="button suite-card__cta" href="./index.html#quartos">Ver detalhes</a>
+            </div>
+          </div>
+        </li>
+        <li class="suite-card">
+          <div class="suite-card__image">
+            <img src="./assets/images/suite-garden-1.webp" alt="Quarto garden com cama de casal e vista para o jardim"
+              loading="lazy">
+            <div class="suite-card__caption"><span>Suíte</span>
+              <h3>Suite Garden</h3>
+            </div>
+            <div class="suite-card__preview">
+              <span>Suíte</span>
+              <h3>Suite Garden</h3>
+              <p>Acomodação com acesso direto ao jardim, rede na varanda e silêncio garantido entre as árvores.</p>
+              <a class="button suite-card__cta" href="./index.html#quartos">Ver detalhes</a>
+            </div>
+          </div>
+        </li>
+        <li class="suite-card">
+          <div class="suite-card__image">
+            <img src="./assets/images/suite-terrace-1.webp" alt="Suite com terraço, cama de casal e escrivaninha"
+              loading="lazy">
+            <div class="suite-card__caption"><span>Suíte</span>
+              <h3>Suite Terrace</h3>
+            </div>
+            <div class="suite-card__preview">
+              <span>Suíte</span>
+              <h3>Suite Terrace</h3>
+              <p>O topo da casa: terraço privativo com ofurô, lounge ao ar livre e vista panorâmica da cidade.</p>
+              <a class="button suite-card__cta" href="./index.html#quartos">Ver detalhes</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="structure-video structure-video--farm" aria-labelledby="farm-title">
+      <video class="structure-video__video" src="./assets/videos/farm.mp4" autoplay muted loop playsinline
+        preload="metadata" aria-hidden="true"></video>
+
+      <div class="structure-video__content">
+        <h2 class="structure-video__title" id="farm-title">Fazenda</h2>
+
+        <p class="structure-video__text">Nosso hotel oferece uma experiência única em meio à natureza. Contamos com amplas áreas verdes, onde os hóspedes podem contemplar paisagens deslumbrantes e conhecer a vida no campo de perto. Ideal para famílias, casais e amantes do turismo rural.</p>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="footer__content">
       <address class="footer__address">
