@@ -9,10 +9,30 @@
 	display: flex;
 	width: fit-content;
 
+	filter: drop-shadow(0 1px 0 var(--foreground-color));
+
 	a {
 		color: var(--foreground-color);
 		text-transform: uppercase;
 		text-decoration: none;
+	}
+}
+
+@supports (animation-timeline: scroll()) {
+	.navbar {
+		animation: navbar-scroll-border 1ms linear both;
+		animation-timeline: scroll(root block);
+		animation-range: 0 48px;
+	}
+}
+
+@keyframes navbar-scroll-border {
+	from {
+		filter: drop-shadow(0 1px 0 rgb(0 0 0 / 0));
+	}
+
+	to {
+		filter: drop-shadow(0 1px 0 var(--foreground-color));
 	}
 }
 
