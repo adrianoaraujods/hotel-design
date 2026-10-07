@@ -3,40 +3,9 @@
 
 @import url(../components/navbar.css);
 @import url(../components/carousel.css);
+@import url(../components/slides.css);
 @import url(../components/button.css);
 @import url(../components/footer.css);
-
-.structure-hero {
-	position: relative;
-	background: #000;
-}
-
-.carousel--structure {
-	height: min(32vh, 240px);
-	min-height: 220px;
-}
-
-.structure-hero img {
-	filter: brightness(0.85);
-}
-
-.structure-hero__content {
-	z-index: 6;
-	position: absolute;
-	inset: 0;
-	max-width: 1024px;
-	margin-inline: auto;
-	padding: 0 var(--space-3);
-	display: flex;
-	align-items: center;
-	pointer-events: none;
-}
-
-.structure-hero__back {
-	border-radius: var(--space-2);
-	box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
-	pointer-events: auto;
-}
 
 .structure {
 	max-width: 1024px;

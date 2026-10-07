@@ -3,41 +3,10 @@
 
 @import url(../components/navbar.css);
 @import url(../components/carousel.css);
+@import url(../components/slides.css);
 @import url(../components/button.css);
 @import url(../components/card.css);
 @import url(../components/footer.css);
-
-.exp-hero {
-	position: relative;
-	background: #000;
-}
-
-.carousel--exp {
-	height: min(32vh, 240px);
-	min-height: 220px;
-}
-
-.exp-hero img {
-	filter: brightness(0.85);
-}
-
-.exp-hero__content {
-	z-index: 6;
-	position: absolute;
-	inset: 0;
-	max-width: 1024px;
-	margin-inline: auto;
-	padding: 0 var(--space-3);
-	display: flex;
-	align-items: center;
-	pointer-events: none;
-}
-
-.exp-hero__back {
-	border-radius: var(--space-2);
-	box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
-	pointer-events: auto;
-}
 
 .exp {
 	max-width: 1024px;
@@ -99,7 +68,11 @@
 	position: absolute;
 	inset: auto 0 0 0;
 	padding: var(--space-4) var(--space-3) var(--space-3);
-	background: linear-gradient(to top, rgb(0 0 0 / 0.75) 0%, rgb(0 0 0 / 0) 100%);
+	background: linear-gradient(
+		to top,
+		rgb(0 0 0 / 0.75) 0%,
+		rgb(0 0 0 / 0) 100%
+	);
 	color: #fff;
 	text-transform: uppercase;
 	transition: opacity 200ms ease;

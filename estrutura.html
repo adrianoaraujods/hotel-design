@@ -83,25 +83,35 @@
     <img class="navbar__corner" src="./assets/corner.svg" aria-hidden>
   </header>
 
-  <section class="structure-hero">
+  <section class="slides">
     <!-- biome-ignore lint/a11y/useSemanticElements: cannot use section because it is already inside one -->
-    <div class="carousel carousel--section carousel--structure" role="region" aria-roledescription="carousel"
-      aria-label="Destaques da estrutura do hotel">
+    <div class="carousel carousel--section" role="region" aria-roledescription="carousel" aria-label="Destaques do restaurante">
       <ul class="carousel__slides">
         <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 3">
-          <img src="./assets/images/structure.webp" alt="Visão panorâmica do Grand Stay Hotel">
+          <img src="./assets/images/cardapio/hero-salao.webp"
+            alt="Fachada do hotel de frente a um lago">
         </li>
         <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 3">
-          <img src="./assets/images/alan-rodriguez-54HOhDVM71g-unsplash.webp" alt="Área externa do hotel com piscina"
-            loading="lazy">
+          <img src="./assets/images/cardapio/hero-restaurante.webp" alt="Salão do restaurante" loading="lazy">
         </li>
         <li class="carousel__slide carousel__slide--3" aria-roledescription="slide" aria-label="3 de 3">
-          <img src="./assets/images/pexels-cottonbro-5371569.webp" alt="Café da manhã servido no hotel" loading="lazy">
+          <img src="./assets/images/cardapio/hero-prato.webp" alt="Prato servido no restaurante" loading="lazy">
         </li>
       </ul>
     </div>
-    <div class="structure-hero__content">
-      <a class="button button--secondary structure-hero__back" href="./index.html">&larr; Voltar</a>
+    <div class="slides__content">
+      <a class="button button--secondary slides__back" href="./index.html">
+        <!-- biome-ignore lint/a11y/noSvgWithoutTitle: Decorative only element -->
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M4.35425 9.50159H15.0417" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M8.7082 14.2516C8.7082 14.2516 3.95826 10.7532 3.95825 9.5015C3.95824 8.2498 8.70828 4.75154 8.70828 4.75154"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        
+        Voltar
+      </a>
     </div>
   </section>
 
