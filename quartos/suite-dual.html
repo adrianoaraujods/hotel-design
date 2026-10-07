@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Stay Hotel</title>
+  <link rel="stylesheet" href="../styles/pages/quartos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <!-- biome-ignore lint/a11y/useAltText: decorative element -->
+    <img class="navbar__corner" src="../assets/corner.svg" style="transform: rotateY(180deg);" aria-hidden>
+
+    <nav class="navbar__content">
+
+      <input type="checkbox" id="navbar-toggle" class="navbar__toggle">
+      <a class="navbar__logo" href="../index.html">
+        <svg width="85" height="32" viewBox="0 0 85 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <title>Grand Stay Hotel</title>
+          <path
+            d="M9.74056 0C4.361 0 0 4.32277 0 9.65517C0 14.9876 4.361 19.3103 9.74056 19.3103H14.6108V14.4828H9.74056C7.0508 14.4828 4.87028 12.3214 4.87028 9.65517C4.87028 6.98899 7.0508 4.82759 9.74056 4.82759H12.6627V5.7931H9.74056C7.58872 5.7931 5.84433 7.5222 5.84433 9.65517C5.84433 11.7881 7.58872 13.5172 9.74056 13.5172H14.6108V8.68966H9.74056C9.20259 8.68966 8.7665 9.12192 8.7665 9.65517C8.7665 10.1884 9.20259 10.6207 9.74056 10.6207H12.6627V11.5862H9.74056C8.66466 11.5862 7.79245 10.7216 7.79245 9.65517C7.79245 8.58871 8.66466 7.72414 9.74056 7.72414H14.6108V2.89655H9.74056C5.97486 2.89655 2.92217 5.92248 2.92217 9.65517C2.92217 13.3879 5.97486 16.4138 9.74056 16.4138H12.6627V17.3793H9.74056C5.43689 17.3793 1.94811 13.9211 1.94811 9.65517C1.94811 5.38923 5.43689 1.93103 9.74056 1.93103H14.6108V0H9.74056Z"
+            fill="black" />
+          <path
+            d="M28.5515 5.78924C28.5515 4.65379 28.2151 3.75264 27.5424 3.08579C26.8697 2.41894 25.7696 2.08552 24.2423 2.08552H19.7149V9.49296H24.2696C25.2696 9.49296 26.0787 9.33977 26.6969 9.03338C27.3333 8.72699 27.797 8.29444 28.0879 7.73572C28.397 7.17701 28.5515 6.52818 28.5515 5.78924ZM24.2423 0.193102C25.7333 0.193102 26.9515 0.445424 27.897 0.950068C28.8606 1.45471 29.5788 2.13057 30.0516 2.97766C30.5243 3.80671 30.7607 4.74391 30.7607 5.78924C30.7607 6.52818 30.6334 7.23108 30.3788 7.89793C30.1425 8.56478 29.7606 9.15954 29.2334 9.68221C28.7061 10.2049 28.0333 10.6194 27.2151 10.9258C26.3969 11.2322 25.4151 11.3854 24.2696 11.3854H19.7149V19.1172H17.533V0.193102H24.2423ZM25.8242 10.5743L31.1152 19.1172H28.6333L23.4786 10.5743H25.8242Z"
+            fill="black" />
+          <path
+            d="M42.4727 2.08552H41.5727L35.2725 19.1172H33.0633L40.0454 0.193102H43.9728L50.9275 19.1172H48.7184L42.4727 2.08552ZM36.4725 12.2505H47.6002V14.1429H36.4725V12.2505Z"
+            fill="black" />
+          <path
+            d="M67.467 0.193102V19.1172H65.2578L55.0575 3.65352V19.1172H52.8756V0.193102H55.0848L65.2851 15.6298V0.193102H67.467Z"
+            fill="black" />
+          <path
+            d="M70.3892 4.82759H75.2594C77.9492 4.82759 80.1297 6.98899 80.1297 9.65517C80.1297 12.3214 77.9492 14.4828 75.2594 14.4828H72.3373V13.5172H75.2594C77.4113 13.5172 79.1557 11.7881 79.1557 9.65517C79.1557 7.5222 77.4113 5.7931 75.2594 5.7931H70.3892V10.6207H75.2594C75.7974 10.6207 76.2335 10.1884 76.2335 9.65517C76.2335 9.12192 75.7974 8.68966 75.2594 8.68966H72.3373V7.72414H75.2594C76.3353 7.72414 77.2076 8.58871 77.2076 9.65517C77.2076 10.7216 76.3353 11.5862 75.2594 11.5862H70.3892V16.4138H75.2594C79.0251 16.4138 82.0778 13.3879 82.0778 9.65517C82.0778 5.92248 79.0251 2.89655 75.2594 2.89655H72.3373V1.93103H75.2594C79.5631 1.93103 83.0519 5.38923 83.0519 9.65517C83.0519 13.9211 79.5631 17.3793 75.2594 17.3793H70.3892V19.3103H75.2594C80.639 19.3103 85 14.9876 85 9.65517C85 4.32277 80.639 0 75.2594 0H70.3892V4.82759Z"
+            fill="black" />
+          <path
+            d="M1.08593 29.253C1.14543 29.5173 1.26939 29.7816 1.45782 30.0458C1.65616 30.3003 1.92393 30.5157 2.26111 30.6918C2.60821 30.8582 3.04952 30.9414 3.58505 30.9414C4.34867 30.9414 4.91395 30.7652 5.28088 30.4129C5.64782 30.0605 5.83128 29.6445 5.83128 29.1649C5.83128 28.7832 5.72715 28.47 5.51889 28.2253C5.31063 27.9806 5.02799 27.78 4.67098 27.6234C4.31396 27.457 3.91231 27.3101 3.46604 27.1829C3.06936 27.0752 2.67267 26.9578 2.27599 26.8305C1.88922 26.6935 1.53716 26.5271 1.21981 26.3314C0.90246 26.1258 0.649573 25.8615 0.461147 25.5385C0.272721 25.2156 0.178509 24.8142 0.178509 24.3346C0.178509 23.7572 0.317349 23.258 0.595029 22.8371C0.872709 22.4064 1.26444 22.0737 1.77021 21.8388C2.27599 21.6038 2.86606 21.4864 3.54042 21.4864C4.12553 21.4864 4.63627 21.5696 5.07262 21.736C5.50898 21.9024 5.87095 22.1373 6.15855 22.4407C6.45606 22.7343 6.67424 23.0769 6.81308 23.4684L5.7569 23.8648C5.68748 23.6397 5.5536 23.4244 5.35526 23.2188C5.15692 23.0035 4.89907 22.8273 4.58172 22.6903C4.26437 22.5533 3.9024 22.4847 3.49579 22.4847C3.09911 22.4847 2.73713 22.5533 2.40987 22.6903C2.09252 22.8273 1.83963 23.0231 1.6512 23.2776C1.46278 23.532 1.36857 23.8404 1.36857 24.2025C1.36857 24.594 1.47766 24.9072 1.69583 25.1421C1.92393 25.3673 2.22144 25.5532 2.58838 25.7C2.96523 25.8371 3.37679 25.9692 3.82306 26.0965C4.22966 26.2237 4.62139 26.3607 4.99824 26.5075C5.38501 26.6544 5.72715 26.8354 6.02467 27.0508C6.3321 27.2661 6.57507 27.5353 6.75358 27.8583C6.93209 28.1813 7.02134 28.5777 7.02134 29.0475C7.02134 29.5662 6.89738 30.0507 6.64945 30.501C6.40152 30.9414 6.02467 31.2987 5.51889 31.5727C5.02304 31.837 4.38338 31.9691 3.59992 31.9691C2.94539 31.9691 2.3702 31.8713 1.87434 31.6755C1.37848 31.47 0.97188 31.1959 0.654532 30.8533C0.337183 30.5108 0.119006 30.1192 0 29.6788L1.08593 29.253Z"
+            fill="black" />
+          <path d="M8.42291 21.5892H16.2327V22.6169H12.9303V31.8664H11.7402V22.6169H8.42291V21.5892Z" fill="black" />
+          <path
+            d="M21.3152 22.6169H20.8243L17.388 31.8664H16.183L19.9912 21.5892H22.1333L25.9266 31.8664H24.7217L21.3152 22.6169ZM18.0425 28.1372H24.1118V29.1649H18.0425V28.1372Z"
+            fill="black" />
+          <path
+            d="M32.8968 21.5892H34.2208L30.4126 27.917V31.8664H29.2225V27.9317L25.4144 21.5892H26.7383L29.8176 26.8012L32.8968 21.5892Z"
+            fill="black" />
+          <path
+            d="M39.1883 21.5589H40.373V26.1223H45.9264V21.5589H47.1111V31.8966H45.9264V27.156H40.373V31.8966H39.1883V21.5589Z"
+            fill="black" />
+          <path
+            d="M54.1761 32C53.4455 32 52.7643 31.872 52.1324 31.616C51.5105 31.36 50.9625 31.0007 50.4887 30.538C50.0246 30.0654 49.6594 29.5091 49.3928 28.8692C49.1361 28.2194 49.0078 27.5056 49.0078 26.7278C49.0078 25.95 49.1361 25.2411 49.3928 24.6012C49.6594 23.9514 50.0246 23.3951 50.4887 22.9324C50.9625 22.4598 51.5105 22.0955 52.1324 21.8395C52.7643 21.5835 53.4455 21.4555 54.1761 21.4555C54.8968 21.4555 55.5681 21.5835 56.1901 21.8395C56.8219 22.0955 57.3699 22.4598 57.8339 22.9324C58.2979 23.3951 58.6582 23.9514 58.9149 24.6012C59.1815 25.2411 59.3148 25.95 59.3148 26.7278C59.3148 27.5056 59.1815 28.2194 58.9149 28.8692C58.6582 29.5091 58.2979 30.0654 57.8339 30.538C57.3699 31.0007 56.8219 31.36 56.1901 31.616C55.5681 31.872 54.8968 32 54.1761 32ZM54.1761 30.9662C54.9165 30.9662 55.5829 30.7939 56.1753 30.4493C56.7676 30.1048 57.2366 29.6174 57.5821 28.9873C57.9277 28.3473 58.1004 27.5942 58.1004 26.7278C58.1004 25.8515 57.9277 25.0983 57.5821 24.4682C57.2366 23.8283 56.7676 23.3409 56.1753 23.0062C55.5829 22.6616 54.9165 22.4893 54.1761 22.4893C53.4258 22.4893 52.7495 22.6616 52.1473 23.0062C51.5549 23.3409 51.086 23.8283 50.7404 24.4682C50.3949 25.0983 50.2221 25.8515 50.2221 26.7278C50.2221 27.5942 50.3949 28.3473 50.7404 28.9873C51.086 29.6174 51.5549 30.1048 52.1473 30.4493C52.7495 30.7939 53.4258 30.9662 54.1761 30.9662Z"
+            fill="black" />
+          <path d="M60.288 21.5589H68.0627V22.5927H64.7751V31.8966H63.5904V22.5927H60.288V21.5589Z" fill="black" />
+          <path
+            d="M76.7459 22.5927H71.1333V26.1223H75.3539V27.156H71.1333V30.8629H76.7459V31.8966H69.9486V21.5589H76.7459V22.5927Z"
+            fill="black" />
+          <path d="M80.1575 21.5589V30.8629H85V31.8966H78.9728V21.5589H80.1575Z" fill="black" />
+        </svg>
+      </a>
+
+      <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+      <ul class="navbar__items" role="list">
+        <li><a href="../index.html#quartos">Quartos</a></li>
+        <li><a href="../estrutura.html">Estrutura</a></li>
+
+        <li><a href="../experiencias.html">Experiências</a></li>
+        <li><a href="../cardapio.html">Cardápio</a></li>
+      </ul>
+
+      <label for="navbar-toggle" class="navbar__menu" aria-label="Abrir menu">
+        <rect></rect>
+        <rect></rect>
+        <rect></rect>
+      </label>
+
+    </nav>
+
+    <!-- biome-ignore lint/a11y/useAltText: decorative element -->
+    <img class="navbar__corner" src="../assets/corner.svg" aria-hidden>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-section__content">
+      <a class="button button--secondary" href="../index.html#quartos">
+        <!-- biome-ignore lint/a11y/noSvgWithoutTitle: Decorative only element -->
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M4.35425 9.50159H15.0417" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M8.7082 14.2516C8.7082 14.2516 3.95826 10.7532 3.95825 9.5015C3.95824 8.2498 8.70828 4.75154 8.70828 4.75154"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        Voltar
+      </a>
+
+      <article class="card card--suite">
+        <h1 class="card__title">Suite Dual</h1>
+
+        <p class="card__price"><span>R$ 430</span><span>por noite</span></p>
+
+        <ul class="card__badges">
+
+          <li class="card__badge">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Cama de solteiro</title>
+              <path d="M1.66669 2.91663V17.0833" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.3333 7.08337V17.0834" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.66669 7.08337L5.00002 8.75004H18.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.66669 12.9166H5.00002M18.3334 12.9166H15.8334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 8.75V13.75C5 15.1289 5.28777 15.4167 6.66667 15.4167H14.1667C15.5456 15.4167 15.8333 15.1289 15.8333 13.75V8.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.67804 8.75004C5.7449 8.39671 5.85019 8.02711 5.82975 7.66432C5.79953 7.12804 5.53083 6.63858 5.10535 6.34478C4.93734 6.22876 4.56669 6.11037 4.17725 6.00915C3.60902 5.86146 3.3249 5.78761 2.99287 5.86374C2.75703 5.91782 2.55217 6.04327 2.25931 6.26737C2.22705 6.29206 2.21091 6.3044 2.18576 6.32526C1.98694 6.49014 1.81065 6.72858 1.71129 6.96699C1.69872 6.99715 1.68804 7.02589 1.66669 7.08338" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <span>2 camas</span>
+          </li>
+
+          <li class="card__badge">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Tamanho do quarto</title>
+              <path
+                d="M4.16666 8.31557C4.16666 9.24579 5.65904 9.99996 7.49999 9.99996V8.31557C7.49999 7.48708 7.49999 7.07283 7.16876 6.82012C6.83752 6.56739 6.50916 6.66192 5.85242 6.85097C4.84556 7.14081 4.16666 7.68813 4.16666 8.31557Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path
+                d="M13.3333 7.08329C13.3333 8.69413 10.7217 9.99996 7.49999 9.99996C4.27833 9.99996 1.66666 8.69413 1.66666 7.08329C1.66666 5.47246 4.27833 4.16663 7.49999 4.16663C10.7217 4.16663 13.3333 5.47246 13.3333 7.08329Z"
+                stroke="currentColor" stroke-width="1.5" />
+              <path
+                d="M1.66666 7.5V13.0556C1.66666 14.5897 4.27833 15.8333 7.49999 15.8333H16.6667C17.4523 15.8333 17.8452 15.8333 18.0892 15.5892C18.3333 15.3452 18.3333 14.9523 18.3333 14.1667V11.6667C18.3333 10.881 18.3333 10.4882 18.0892 10.2441C17.8452 10 17.4523 10 16.6667 10H7.49999"
+                stroke="currentColor" stroke-width="1.5" />
+              <path d="M15 15.8333V14.1667M11.6667 15.8333V14.1667M8.33333 15.8333V14.1667M5 15.4167V13.75"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <span>24 m&sup2;</span>
+          </li>
+
+        </ul>
+
+        <div class="card__content">
+          <p>
+            Ideal para famílias e grupos, a Suite Dual tem duas camas de casal, banheiro amplo e espaço de sobra para descansar depois de um dia de passeios pela cidade.
+          </p>
+
+          <div class="card__grid">
+            <div class="card__column">
+              <label class="card__subtitle" for="check-in">CHECK-IN</label>
+              <input class="card__value" type="date" id="check-in" value="2026-07-21">
+              <span>Segunda-feira</span>
+            </div>
+
+            <div class="card__column">
+              <label class="card__subtitle" for="check-out">CHECK-OUT</label>
+              <input class="card__value" type="date" id="check-out" value="2026-07-25">
+              <span>Sexta-feira</span>
+            </div>
+
+            <div class="card__column">
+              <span class="card__subtitle">Duração</span>
+              <span class="card__value">4 noites</span>
+            </div>
+          </div>
+
+          <div class="bill">
+            <span class="card__subtitle">RESUMO DO CÁLCULO</span>
+
+            <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+            <ul class="bill_list" role="list">
+              <li class="bill__item">4 noites <span class="bill__value">R$ 1.720,00</span></li>
+              <li class="bill__item">Taxa de serviço <span class="bill__value">R$ 172,00</span></li>
+              <li class="bill__item">Taxa de reserva <span class="bill__value">R$ 200,00</span></li>
+            </ul>
+
+            <div class="bill__sum">
+              <span>TOTAL GERAL</span>
+              <span class="bill__total">R$ 2.092,00</span>
+            </div>
+          </div>
+
+          <a class="button" href="../reserva.html">Confirmar reserva</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- biome-ignore lint/a11y/useSemanticElements: cannot use section because it is already inside one -->
+    <div class="carousel carousel--section" role="region" aria-roledescription="carousel"
+      aria-label="Destaques do hotel">
+
+      <!-- All slides render stacked (absolute, opacity 0). Autoplay fades each in/out via different animation delays -->
+      <ul class="carousel__slides">
+        <li class="carousel__slide carousel__slide--1" aria-roledescription="slide" aria-label="1 de 3">
+          <img src="../assets/images/suite-dual-1.webp" alt="Suite dual com duas camas.">
+        </li>
+        <li class="carousel__slide carousel__slide--2" aria-roledescription="slide" aria-label="2 de 3">
+          <img src="../assets/images/suite-dual-2.webp" alt="Área de estar da suite dual." loading="lazy">
+        </li>
+        <li class="carousel__slide carousel__slide--3" aria-roledescription="slide" aria-label="3 de 3">
+          <img src="../assets/images/suite-dual-3.webp" alt="Detalhe do banheiro da suite dual." loading="lazy">
+        </li>
+      </ul>
+
+      <footer class="carousel__footer">
+        <!-- biome-ignore lint/a11y/useAltText: decorative element -->
+        <img src="../assets/corner.svg"
+          style="transform: rotateX(180deg) rotateY(180deg); aspect-ratio: 1; height: 32px;" aria-hidden>
+
+        <!-- The radio inputs controls the slides, holding the state with the `checked` propery. When checked, they stop the autoplay animation, forcing the specific slide to show. -->
+        <div class="carousel__dots">
+          <input class="carousel__dot carousel__dot--1" type="radio" name="hero-slide" id="hero-t1" aria-label="Ir para imagem 1">
+          <input class="carousel__dot carousel__dot--2" type="radio" name="hero-slide" id="hero-t2" aria-label="Ir para imagem 2">
+          <input class="carousel__dot carousel__dot--3" type="radio" name="hero-slide" id="hero-t3" aria-label="Ir para imagem 3">
+        </div>
+
+        <!-- biome-ignore lint/a11y/useAltText: decorative element -->
+        <img src="../assets/corner.svg" style="transform: rotateX(180deg); aspect-ratio: 1; height: 32px;" aria-hidden>
+      </footer>
+    </div>
+  </section>
+
+  <main>
+    <section class="container">
+      <article class="section">
+        <h2 class="section__title">Suite Dual</h2>
+
+        <p>
+          Pensada para quem viaja acompanhado, a Suite Dual distribui seus 24 m&sup2; em duas camas de casal, um ampla área de passagem e um banheiro completo, sem abrir mão do conforto que marca a casa.
+        </p>
+
+        <p>
+          A janela que abre traz luz natural o dia todo e o ar da Serra do Curral entra junto. Entre os pontos de apoio estão cofre, secador, micro-ondas e televisão com mais de 500 canais.
+        </p>
+
+        <p>
+          A suite fica no segundo pavimento, a poucos passos do hall e da recepção, o que torna a hospedagem prática para famílias com crianças e para quem chega tarde.
+        </p>
+      </article>
+
+      <hr>
+
+      <aside class="aside">
+        <h3 class="section__title">Detalhes</h3>
+
+        <!-- biome-ignore lint/a11y/noRedundantRoles: role is used for styling -->
+        <ul class="details" role="list">
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Quantidade de pessoas</title>
+              <path
+                d="M16.5 20V16.9852C16.5 16.364 16.2184 15.7658 15.6838 15.4494C14.1574 14.546 12.1714 14 10 14C7.82863 14 5.84261 14.546 4.31618 15.4494C3.78162 15.7658 3.5 16.364 3.5 16.9852V20"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10 11C11.933 11 13.5 9.433 13.5 7.5C13.5 5.567 11.933 4 10 4C8.067 4 6.5 5.567 6.5 7.5C6.5 9.433 8.067 11 10 11Z"
+                stroke="currentColor" stroke-width="1.5" />
+              <path
+                d="M20.5 20.001V16.9862C20.5 16.365 20.2184 15.7667 19.6838 15.4504C19.171 15.1468 18.6062 14.8837 18 14.668"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15 4.14453C16.4457 4.57481 17.5 5.91408 17.5 7.49959C17.5 9.0851 16.4457 10.4244 15 10.8547"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+
+            <span>4 pessoas</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Tamanho do quarto</title>
+              <path
+                d="M5 9.97873C5 11.095 6.79086 12 9 12V9.97873C9 8.98454 9 8.48745 8.60252 8.18419C8.20504 7.88092 7.811 7.99435 7.02292 8.22121C5.81469 8.56902 5 9.2258 5 9.97873Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path
+                d="M16 8.5C16 10.433 12.866 12 9 12C5.13401 12 2 10.433 2 8.5C2 6.567 5.13401 5 9 5C12.866 5 16 6.567 16 8.5Z"
+                stroke="currentColor" stroke-width="1.5" />
+              <path
+                d="M2 9V15.6667C2 17.5076 5.13401 19 9 19H20C20.9428 19 21.4142 19 21.7071 18.7071C22 18.4142 22 17.9428 22 17V14C22 13.0572 22 12.5858 21.7071 12.2929C21.4142 12 20.9428 12 20 12H9"
+                stroke="currentColor" stroke-width="1.5" />
+              <path d="M18 19V17M14 19V17M10 19V17M6 18.5V16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            <span>24 m&sup2;</span>
+          </li>
+          <li class="details__item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Camas</title>
+              <path d="M18.3333 14.5834H1.66666" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M18.3333 17.5V13.3333C18.3333 11.762 18.3333 10.9763 17.8452 10.4882C17.357 10 16.5713 10 15 10H4.99999C3.42864 10 2.64296 10 2.15481 10.4882C1.66666 10.9763 1.66666 11.762 1.66666 13.3333V17.5"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M9.16667 10V8.51117C9.16667 8.19393 9.119 8.08784 8.87475 7.96282C8.36625 7.70243 7.74887 7.5 7.08333 7.5C6.41779 7.5 5.80046 7.70243 5.29187 7.96282C5.04767 8.08784 5 8.19393 5 8.51117V10"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path
+                d="M15 10V8.51117C15 8.19393 14.9523 8.08784 14.7081 7.96282C14.1996 7.70243 13.5823 7.5 12.9167 7.5C12.2511 7.5 11.6338 7.70243 11.1253 7.96282C10.881 8.08784 10.8333 8.19393 10.8333 8.51117V10"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path
+                d="M17.5 10V6.13381C17.5 5.55744 17.5 5.26926 17.3399 4.99711C17.1797 4.72496 16.9517 4.58409 16.4953 4.30236C14.6557 3.16648 12.4161 2.5 10 2.5C7.58389 2.5 5.34428 3.16648 3.50465 4.30236C3.04837 4.58409 2.82023 4.72496 2.66011 4.99711C2.5 5.26926 2.5 5.55744 2.5 6.13381V10"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+
+            <span>2 camas de casal</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Tipo de Janela</title>
+              <path
+                d="M14.0136 3.99538L8.01361 4.99036C5.61912 5.38744 4.42188 5.58597 3.71094 6.421C3 7.25602 3 8.46368 3 10.879V13.121C3 15.5363 3 16.744 3.71094 17.579C4.42188 18.414 5.61913 18.6126 8.01361 19.0096L14.0136 20.0046C17.2567 20.5424 18.8782 20.8113 19.9391 19.9171C21 19.023 21 17.3873 21 14.116V9.88402C21 6.6127 21 4.97704 19.9391 4.08286C18.8782 3.18868 17.2567 3.45758 14.0136 3.99538Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M11 4.5V19.5M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            <span>Janela que abre</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Banheiro</title>
+              <path d="M22 12H15C14.3509 12 13.7193 11.7895 13.2 11.4L10.8 9.6C10.2807 9.21053 9.64911 9 9 9H2"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M3 9V11C3 14.7712 3 16.6569 4.17157 17.8284C5.34315 19 7.22876 19 11 19H14C16.8089 19 18.2134 19 19.2223 18.3259C19.659 18.034 20.034 17.659 20.3259 17.2223C21 16.2134 21 14.8089 21 12"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M18 19V21M6 19V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M5 9V4.5C5 3.67157 5.67157 3 6.5 3C7.32843 3 8 3.67157 8 4.5V5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <span>1 banheiro</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Cofre</title>
+              <path
+                d="M21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3.5 8H5M3.5 16H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            <span>Cofre</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Televisão</title>
+              <path
+                d="M2 14C2 10.2288 2 8.34315 3.17157 7.17157C4.34315 6 6.22876 6 10 6H14C17.7712 6 19.6569 6 20.8284 7.17157C22 8.34315 22 10.2288 22 14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path
+                d="M14.957 14.3384C14.8182 14.8756 14.1619 15.2552 12.8494 16.0144C11.5806 16.7484 10.9462 17.1153 10.4349 16.9678C10.2236 16.9068 10.031 16.791 9.87567 16.6315C9.5 16.2456 9.5 15.497 9.5 14C9.5 12.503 9.5 11.7544 9.87567 11.3685C10.031 11.209 10.2236 11.0932 10.4349 11.0322C10.9462 10.8847 11.5806 11.2516 12.8494 11.9856C14.1619 12.7448 14.8182 13.1244 14.957 13.6616C15.0143 13.8834 15.0143 14.1166 14.957 14.3384Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M9 3L12 6L16 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+            <span>TV com +500 canais</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Secador de cabelo</title>
+              <path
+                d="M8.69128 2.15168C5.80039 1.36313 3 3.74875 3 7C3 10.2513 5.80039 12.6369 8.69128 11.8483C10.9979 11.2192 14.2043 9.58049 16.6244 9.80217C17.5008 9.88246 18.126 10.6464 18.9467 10.8707C20.0559 11.1739 20.4902 9.50002 20.7285 8.75297C21.0905 7.61771 21.0905 6.38229 20.7285 5.24703C20.4902 4.49998 20.0559 2.82606 18.9467 3.12929C18.126 3.35364 17.5008 4.11755 16.6244 4.19783C14.2043 4.41951 10.9979 2.78085 8.69128 2.15168Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M5.5 11.5C6.87177 12.9095 6.77428 15.2676 6.8188 17.376C6.8373 18.2518 7.50261 19 8.34709 19H9.5674C10.2374 19 10.6397 17.4957 10.8465 17.0224C11.1215 16.3927 11.0041 15.6743 10.6757 15.0727C9.98228 13.8023 9.5 13 10 11.5"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16.5 4.5L16.8789 6.01942C17.0404 6.66673 17.0404 7.33327 16.8789 7.98058L16.5 9.5"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M9 19C9 19.9319 9 20.3978 8.82601 20.7654C8.59402 21.2554 8.14906 21.6448 7.58899 21.8478C7.16894 22 6.06501 22 5 22"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <span>Secador</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Wi-fi</title>
+              <path d="M8.25 14.5C10.25 12.5 13.75 12.5 15.75 14.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M18.5 11.5C14.7324 8.16667 9.5 8.16667 5.5 11.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2 8.5C8.31579 3.16669 15.6842 3.16668 22 8.49989" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M12 19.5C12.8284 19.5 13.5 18.8284 13.5 18C13.5 17.1716 12.8284 16.5 12 16.5C11.1716 16.5 10.5 17.1716 10.5 18C10.5 18.8284 11.1716 19.5 12 19.5Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <span>Wi-fi gratuito</span>
+          </li>
+          <li class="details__item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Micro-ondas</title>
+              <path
+                d="M16 3.5H8C5.17157 3.5 3.75736 3.5 2.87868 4.37868C2 5.25736 2 6.67157 2 9.5V12.5C2 15.3284 2 16.7426 2.87868 17.6213C3.75736 18.5 5.17157 18.5 8 18.5H16C18.8284 18.5 20.2426 18.5 21.1213 17.6213C22 16.7426 22 15.3284 22 12.5V9.5C22 6.67157 22 5.25736 21.1213 4.37868C20.2426 3.5 18.8284 3.5 16 3.5Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M13 6.5H8C6.58579 6.5 5.87868 6.5 5.43934 6.93934C5 7.37868 5 8.08579 5 9.5V12.5C5 13.9142 5 14.6213 5.43934 15.0607C5.87868 15.5 6.58579 15.5 8 15.5H13C14.4142 15.5 15.1213 15.5 15.5607 15.0607C16 14.6213 16 13.9142 16 12.5V9.5C16 8.08579 16 7.37868 15.5607 6.93934C15.1213 6.5 14.4142 6.5 13 6.5Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 18.5V20.5M19 18.5V20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M19.0504 7.50234H19.0004M19.1004 7.50234C19.1004 7.55757 19.0556 7.60234 19.0004 7.60234C18.9452 7.60234 18.9004 7.55757 18.9004 7.50234C18.9004 7.44712 18.9452 7.40234 19.0004 7.40234C19.0556 7.40234 19.1004 7.44712 19.1004 7.50234Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M19.0504 11.5023H19.0004M19.1004 11.5023C19.1004 11.5576 19.0556 11.6023 19.0004 11.6023C18.9452 11.6023 18.9004 11.5576 18.9004 11.5023C18.9004 11.4471 18.9452 11.4023 19.0004 11.4023C19.0556 11.4023 19.1004 11.4471 19.1004 11.5023Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <span>Micro-ondas</span>
+          </li>
+        </ul>
+
+        <footer class="actions">
+          <a class="button button--secondary" href="../experiencias.html">Ver experiencias</a>
+
+          <a class="button" href="../reserva.html">Reservar</a>
+        </footer>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <address class="footer__address">
+        <a href="../index.html">
+          <svg width="315" height="24" viewBox="0 0 315 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Grand Stay Hotel</title>
+            <path
+              d="M12.0848 0C5.41054 0 0 5.37259 0 12C0 18.6274 5.41054 24 12.0848 24H18.1272V18H12.0848C8.74768 18 6.04238 15.3137 6.04238 12C6.04238 8.68632 8.74768 6 12.0848 6H15.7102V7.2H12.0848C9.41506 7.2 7.25086 9.34902 7.25086 12C7.25086 14.651 9.41506 16.8 12.0848 16.8H18.1272V10.8H12.0848C11.4173 10.8 10.8763 11.3372 10.8763 12C10.8763 12.6628 11.4173 13.2 12.0848 13.2H15.7102V14.4H12.0848C10.7499 14.4 9.66781 13.3255 9.66781 12C9.66781 10.6745 10.7499 9.6 12.0848 9.6H18.1272V3.6H12.0848C7.4128 3.6 3.62543 7.3608 3.62543 12C3.62543 16.6392 7.4128 20.4 12.0848 20.4H15.7102V21.6H12.0848C6.74535 21.6 2.41695 17.302 2.41695 12C2.41695 6.69804 6.74535 2.4 12.0848 2.4H18.1272V0H12.0848Z"
+              fill="black" />
+            <path
+              d="M35.4229 7.1952C35.4229 5.784 35.0055 4.664 34.1709 3.8352C33.3362 3.0064 31.9715 2.592 30.0766 2.592H24.4596V11.7984H30.1104C31.3511 11.7984 32.3549 11.608 33.1219 11.2272C33.9115 10.8464 34.4867 10.3088 34.8476 9.6144C35.2311 8.92 35.4229 8.1136 35.4229 7.1952ZM30.0766 0.239999C31.9263 0.239999 33.4377 0.553599 34.6108 1.1808C35.8064 1.808 36.6974 2.648 37.2839 3.7008C37.8704 4.7312 38.1637 5.896 38.1637 7.1952C38.1637 8.1136 38.0058 8.9872 37.69 9.816C37.3967 10.6448 36.923 11.384 36.2688 12.0336C35.6146 12.6832 34.78 13.1984 33.7648 13.5792C32.7497 13.96 31.5316 14.1504 30.1104 14.1504H24.4596V23.76H21.7526V0.239999H30.0766ZM32.0391 13.1424L38.6036 23.76H35.5244L29.1291 13.1424H32.0391Z"
+              fill="black" />
+            <path
+              d="M52.6944 2.592H51.5778L43.7614 23.76H41.0205L49.6829 0.239999H54.5555L63.184 23.76H60.4432L52.6944 2.592ZM45.2502 15.2256H59.0558V17.5776H45.2502V15.2256Z"
+              fill="black" />
+            <path
+              d="M83.7039 0.239999V23.76H80.9631L68.3079 4.5408V23.76H65.601V0.239999H68.3418L80.9969 19.4256V0.239999H83.7039Z"
+              fill="black" />
+            <path
+              d="M87.3294 6H93.3718C96.7088 6 99.4141 8.68632 99.4141 12C99.4141 15.3137 96.7088 18 93.3718 18H89.7463V16.8H93.3718C96.0415 16.8 98.2057 14.651 98.2057 12C98.2057 9.34902 96.0415 7.2 93.3718 7.2H87.3294V13.2H93.3718C94.0392 13.2 94.5802 12.6628 94.5802 12C94.5802 11.3372 94.0392 10.8 93.3718 10.8H89.7463V9.6H93.3718C94.7066 9.6 95.7887 10.6745 95.7887 12C95.7887 13.3255 94.7066 14.4 93.3718 14.4H87.3294V20.4H93.3718C98.0437 20.4 101.831 16.6392 101.831 12C101.831 7.3608 98.0437 3.6 93.3718 3.6H89.7463V2.4H93.3718C98.7112 2.4 103.04 6.69804 103.04 12C103.04 17.302 98.7112 21.6 93.3718 21.6H87.3294V24H93.3718C100.046 24 105.457 18.6274 105.457 12C105.457 5.37259 100.046 0 93.3718 0H87.3294V6Z"
+              fill="black" />
+            <path
+              d="M121.629 17.7815C121.765 18.3866 122.048 18.9916 122.478 19.5966C122.93 20.1793 123.541 20.6723 124.31 21.0756C125.102 21.4566 126.109 21.6471 127.33 21.6471C129.072 21.6471 130.362 21.2437 131.199 20.437C132.036 19.6303 132.455 18.6779 132.455 17.5798C132.455 16.7059 132.217 15.9888 131.742 15.4286C131.267 14.8683 130.622 14.409 129.808 14.0504C128.993 13.6695 128.077 13.3333 127.059 13.042C126.154 12.7955 125.249 12.5266 124.344 12.2353C123.462 11.9216 122.659 11.5406 121.935 11.0924C121.211 10.6218 120.634 10.0168 120.204 9.27731C119.774 8.53782 119.559 7.61905 119.559 6.52101C119.559 5.19888 119.876 4.05602 120.51 3.09244C121.143 2.10644 122.037 1.34454 123.19 0.806722C124.344 0.268907 125.69 0 127.229 0C128.563 0 129.729 0.190476 130.724 0.571427C131.719 0.95238 132.545 1.4902 133.201 2.18487C133.88 2.85714 134.378 3.64146 134.694 4.53781L132.285 5.44538C132.127 4.92997 131.821 4.43697 131.369 3.96639C130.916 3.47339 130.328 3.07003 129.604 2.7563C128.88 2.44258 128.054 2.28571 127.127 2.28571C126.222 2.28571 125.396 2.44258 124.65 2.7563C123.926 3.07003 123.349 3.51821 122.919 4.10084C122.489 4.68347 122.274 5.38936 122.274 6.21849C122.274 7.11485 122.523 7.83193 123.021 8.36975C123.541 8.88515 124.22 9.31092 125.057 9.64706C125.917 9.96078 126.855 10.2633 127.873 10.5546C128.801 10.8459 129.695 11.1597 130.554 11.4958C131.437 11.8319 132.217 12.2465 132.896 12.7395C133.597 13.2325 134.151 13.8487 134.559 14.5882C134.966 15.3277 135.169 16.2353 135.169 17.3109C135.169 18.4986 134.887 19.6078 134.321 20.6387C133.755 21.6471 132.896 22.465 131.742 23.0924C130.611 23.6975 129.152 24 127.364 24C125.871 24 124.559 23.7759 123.428 23.3277C122.297 22.8571 121.369 22.2297 120.645 21.4454C119.921 20.6611 119.424 19.7647 119.152 18.7563L121.629 17.7815Z"
+              fill="black" />
+            <path d="M138.367 0.235293H156.182V2.58823H148.649V23.7647H145.934V2.58823H138.367V0.235293Z"
+              fill="black" />
+            <path
+              d="M167.777 2.58823H166.657L158.818 23.7647H156.069L164.757 0.235293H169.643L178.297 23.7647H175.548L167.777 2.58823ZM160.311 15.2269H174.157V17.5798H160.311V15.2269Z"
+              fill="black" />
+            <path
+              d="M194.197 0.235293H197.217L188.53 14.7227V23.7647H185.815V14.7563L177.128 0.235293H180.148L187.173 12.1681L194.197 0.235293Z"
+              fill="black" />
+            <path
+              d="M210.913 0.235293H213.605V10.6218H226.222V0.235293H228.914V23.7647H226.222V12.9748H213.605V23.7647H210.913V0.235293Z"
+              fill="black" />
+            <path
+              d="M244.966 24C243.306 24 241.759 23.7087 240.323 23.1261C238.91 22.5434 237.665 21.7255 236.588 20.6723C235.534 19.5966 234.704 18.3305 234.098 16.8739C233.515 15.395 233.223 13.7703 233.223 12C233.223 10.2297 233.515 8.61625 234.098 7.15966C234.704 5.68067 235.534 4.41457 236.588 3.36134C237.665 2.28571 238.91 1.45658 240.323 0.873948C241.759 0.291316 243.306 0 244.966 0C246.604 0 248.129 0.291316 249.542 0.873948C250.978 1.45658 252.223 2.28571 253.277 3.36134C254.331 4.41457 255.15 5.68067 255.733 7.15966C256.339 8.61625 256.642 10.2297 256.642 12C256.642 13.7703 256.339 15.395 255.733 16.8739C255.15 18.3305 254.331 19.5966 253.277 20.6723C252.223 21.7255 250.978 22.5434 249.542 23.1261C248.129 23.7087 246.604 24 244.966 24ZM244.966 21.6471C246.648 21.6471 248.163 21.2549 249.508 20.4706C250.854 19.6863 251.92 18.577 252.705 17.1429C253.49 15.6863 253.883 13.972 253.883 12C253.883 10.0056 253.49 8.29132 252.705 6.85714C251.92 5.40056 250.854 4.29132 249.508 3.52941C248.163 2.7451 246.648 2.35294 244.966 2.35294C243.261 2.35294 241.725 2.7451 240.357 3.52941C239.011 4.29132 237.945 5.40056 237.16 6.85714C236.375 8.29132 235.982 10.0056 235.982 12C235.982 13.972 236.375 15.6863 237.16 17.1429C237.945 18.577 239.011 19.6863 240.357 20.4706C241.725 21.2549 243.261 21.6471 244.966 21.6471Z"
+              fill="black" />
+            <path d="M258.853 0.235293H276.517V2.58823H269.048V23.7647H266.356V2.58823H258.853V0.235293Z"
+              fill="black" />
+            <path
+              d="M296.246 2.58823H283.494V10.6218H293.083V12.9748H283.494V21.4118H296.246V23.7647H280.802V0.235293H296.246V2.58823Z"
+              fill="black" />
+            <path d="M303.997 0.235293V21.4118H315V23.7647H301.306V0.235293H303.997Z" fill="black" />
+          </svg>
+        </a>
+
+        <p>Rua Fulano de Tal, número 123</p>
+        <p>Belo Horizonte / MG</p>
+        <p><a href="tel:+553130000000">+55 (31) 3000-0000</a></p>
+        <p><a href="mailto:contato@grandstayhotel.com.br">contato@grandstayhotel.com.br</a></p>
+      </address>
+
+      <nav class="footer__column">
+        <h3>Menu</h3>
+
+        <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+        <ul role="list">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../index.html#quartos">Quartos</a></li>
+          <li><a href="../estrutura.html">Estrutura</a></li>
+          <li><a href="../experiencias.html">Experiências</a></li>
+          <li><a href="../cardapio.html">Cardápio</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__column">
+        <div>
+          <h3>Informações</h3>
+
+          <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+          <ul role="list">
+            <li><a href="../privacidade.html">Política de Privacidade</a></li>
+            <li><a href="../legais.html">Informações Legais</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Redes Sociais</h3>
+
+          <!-- biome-ignore lint/a11y/noRedundantRoles: role used for styling -->
+          <ul class="footer__socials" role="list">
+            <li>
+              <a href="https://www.instagram.com/">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <title>Instagram</title>
+                  <path
+                    d="M3 12C3 7.75736 3 5.63604 4.31802 4.31802C5.63604 3 7.75736 3 12 3C16.2426 3 18.364 3 19.682 4.31802C21 5.63604 21 7.75736 21 12C21 16.2426 21 18.364 19.682 19.682C18.364 21 16.2426 21 12 21C7.75736 21 5.63604 21 4.31802 19.682C3 18.364 3 16.2426 3 12Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M17.3748 6.75024H17.2498M17.4998 6.75024C17.4998 6.88832 17.3878 7.00024 17.2498 7.00024C17.1117 7.00024 16.9998 6.88832 16.9998 6.75024C16.9998 6.61217 17.1117 6.50024 17.2498 6.50024C17.3878 6.50024 17.4998 6.61217 17.4998 6.75024Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <title>X</title>
+                  <path
+                    d="M3 21L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516L3 3H8L13.4516 10.5484ZM21 3L13.4516 10.5484"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tripadvisor.com.br">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <title>Tripadvisor</title>
+                  <path
+                    d="M22.0384 9.36883L24 7.29138H19.6501C17.4724 5.84334 14.8424 5 11.9982 5C9.15752 5 6.5349 5.84516 4.36082 7.29138H0L1.96156 9.36883C0.759216 10.4367 0.00546801 11.9749 0.00546801 13.6828C0.00546801 16.906 2.68993 19.5191 6.00096 19.5191C7.57384 19.5191 9.00683 18.9286 10.0766 17.9632L11.9982 20L13.9198 17.965C14.9896 18.9304 16.4208 19.5191 17.9937 19.5191C21.3047 19.5191 23.9928 16.906 23.9928 13.6828C23.9945 11.9731 23.2408 10.435 22.0384 9.36883ZM6.00273 17.6326C3.76145 17.6326 1.94525 15.8646 1.94525 13.6828C1.94525 11.5011 3.76149 9.73304 6.00273 9.73304C8.24397 9.73304 10.0602 11.5011 10.0602 13.6828C10.0602 15.8646 8.24397 17.6326 6.00273 17.6326ZM12 13.5679C12 10.9689 10.0584 8.73765 7.49569 7.78466C8.88148 7.22063 10.4017 6.9077 11.9982 6.9077C13.5947 6.9077 15.1166 7.22063 16.5025 7.78466C13.9416 8.73942 12 10.9689 12 13.5679ZM17.9955 17.6326C15.7542 17.6326 13.938 15.8646 13.938 13.6828C13.938 11.5011 15.7542 9.73304 17.9955 9.73304C20.2368 9.73304 22.053 11.5011 22.053 13.6828C22.053 15.8646 20.2367 17.6326 17.9955 17.6326ZM17.9955 11.6107C16.8204 11.6107 15.8686 12.5371 15.8686 13.6811C15.8686 14.825 16.8204 15.7514 17.9955 15.7514C19.1706 15.7514 20.1223 14.825 20.1223 13.6811C20.1223 12.5389 19.1706 11.6107 17.9955 11.6107ZM8.12956 13.6828C8.12956 14.8267 7.17783 15.7532 6.00273 15.7532C4.82764 15.7532 3.87591 14.8267 3.87591 13.6828C3.87591 12.5389 4.82764 11.6124 6.00273 11.6124C7.17783 11.6107 8.12956 12.5389 8.12956 13.6828Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    </div>
+
+    <p class="footer__copyright">&copy; 2026 Grand Stay Hotel. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
